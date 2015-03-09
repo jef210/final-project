@@ -146,10 +146,10 @@ var track = new Track ();
 
             ////// PAD INSTANCES //////
             
-var dorian = new Pad ('dorian', 'f_sharp_minor_pad.mp3' );
-var lydian = new Pad ('lydian', 'c_sharp_major_pad.mp3');
-var aeolian = new Pad ('aeolian', 'c_sharp_minor_pad.mp3');
-var ionian = new Pad ('ionian', 'f_sharp_major_pad.mp3');
+var dorian = new Pad ('OBSTACLES', 'f_sharp_minor_pad.mp3');
+var lydian = new Pad ('VALUES', 'c_sharp_major_pad.mp3');
+var aeolian = new Pad ('STORIES', 'c_sharp_minor_pad.mp3');
+var ionian = new Pad ('GOALS', 'f_sharp_major_pad.mp3');
 
 
             ////// NOTE INSTANCES //////
