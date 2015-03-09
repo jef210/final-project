@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  .main-container
+    .home-container
+      .row
+        .col-md-12
+          h1  Choose Your Mood
+          .mood-chooser-entry-click-box
+            .dropdown.col-md-2.col-xs-4
+              button#happy.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
+                | Happy
+                span.caret
+              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') farts
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Another action
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Something else here
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Separated link
+            .col-md-2.col-xs-4
+              button#excited.emotion-button.btn-block Excited
+            .col-md-2.col-xs-4
+              button#tender.emotion-button.btn-block Tender
+            .col-md-2.col-xs-4
+              button#scared.emotion-button.btn-block Scared
+            .col-md-2.col-xs-4
+              button#angry.emotion-button.btn-block Angry
+            .col-md-2.col-xs-4
+              button#sad.emotion-button.btn-block Sad
+    
+      .row
+        .col-md-12
+          .mood-chooser-entry-click-box
+            h1  What are you thinking about?
+            form.form-inline
+              .col-md-10
+                // <div class="row">
+                .form-group.form-goal
+                  input#goal-input.form-control(type='text', placeholder='Enter A Goal')
+              .col-md-2
+                button#goal-submit.btn.btn-default.btn-block(type='submit') Submit
+         
+      br
+      .row
+        .col-md-6.col-md-offset-3
+          // <div class="row">
+          .col-md-6
+            button.btn.btn-primary.btn-lg.btn-block(type='button') Profile
+          .col-md-6
+            button.btn.btn-primary.btn-lg.btn-block(type='button') About

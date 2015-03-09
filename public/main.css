@@ -1,0 +1,255 @@
+/*------------------------ GLOBAL STRUCTURE ---------------------------*/
+body {
+  background-color: lightgrey;
+}
+.main-container {
+  margin: auto;
+  width: 100%;
+
+}
+.home-container {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+}
+.header {
+  display: block;
+  
+}
+.color {
+  background-color: transparent;
+  border: none;
+}
+#header-title {
+  padding-right: 20px;
+}
+.body-section {
+  margin-left: 15px;
+}
+.body-section h3 {
+  color: #777;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+.body-section p {
+  font-size: .8em;
+  text-decoration: none;
+}
+
+
+/*------------------------- GLOBAL STYLING -----------------------------*/
+
+
+
+
+
+
+
+/*---------------------- MOOD SELECTION SECTION ----------------------*/
+
+.mood-chooser-entry-click-box {
+  width: 90%;
+  /*height: 40px;*/
+  margin: auto;
+  background-color: none;
+  /*border: 2px solid black; */
+  border-radius: 5px;
+}
+
+.emotion-button {
+  /*width: 15.5%;*/
+  height: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 1px;
+  display: inline-block;
+}
+
+#happy {
+  background-color: #38b616;
+}
+#excited {
+  background-color: #fdb900;
+}
+#tender {
+  background-color: #fba7f4;
+}
+#scared {
+  background-color: #fbfd00;
+}
+#angry {
+  background-color: #f30707;
+}
+#sad {
+  background-color: #6cb3fb;
+}
+
+.goal-entry-box {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  background-color: ghostwhite;
+  border: 2px solid black; 
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.form-goal {
+  width: 100%;
+
+}
+
+#goal-input {
+  width: 100%;
+}
+
+
+.drop-down-style {
+  left: 15px;
+  right:15px;
+  margin: 0px;
+}
+
+
+
+
+/*----------------------------- INSTRUMENT STRUCTURE ------------------------*/
+.instrument-container {
+  margin: auto;
+  /*padding-top: 10px;*/
+  width: 100%;
+}
+
+
+
+
+/*-------------------------- INSTRUMENT  ----------------------*/
+.top-left-quad {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+}
+.top-right-quad {
+  border-top: 2px solid black;
+  border-right:2px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+}
+.bottom-left-quad {
+  border-top: 1px solid black;
+  border-left:2px solid black;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+}
+.bottom-right-quad {
+border-top: 1px solid black;
+border-right:2px solid black;
+border-left: 1px solid black;
+border-bottom: 2px solid black;
+border-radius: 5px;
+}
+.pad {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/*-------------------------- INNER HEX NOTES -------------------------*/
+
+.note-btn {
+ background-color: transparent;
+ padding: 1px;
+}
+
+.note-btn div {
+  background-color: ghostwhite;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+}
+/*.note-btn:hover {
+  padding: 33px;
+  color: lightgrey;
+  border: 1px solid darkgrey;
+  margin: 8px;
+}
+*/
+
+
+
+/*------------------------------- FOOTER ----------------------------*/
+
+.exit-instrument {
+  width: 100%;
+  padding: 10px;
+  background-color: lightgrey;
+  text-align: center;
+  margin: auto;
+  
+}
+
+
+
+/*------------------------ PROFILE PAGE STRUCTURE -----------------------*/
+/*.profile-container {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+.profile-container h1 {
+  text-align: left;
+}*/
+
+/*Using the same structure as .home-container*/
+
+/*--------------------------- MOOD & GOALS DATA --------------------------*/
+.goals-mood-most-recent h2 {
+  text-align: center;
+}
+
+.goals-mood-most-recent ul li {
+  list-style: none;
+  text-align: left;
+}
+
+
+
+
+
+
+/*-------------------------- AUDIO DATA CHARTS ------------------------------------*/
+
+
+
+
+
+
+/*--------------------------- LINKS -------------------------------------------*/
+
+
+
+
+
+/*--------------------------- FOOTER ----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,166 @@
+Relational Synth To Do:
+Display:
+  ☐ Add Words to Sections
+    ☐ goals, values, roadblocks, stories
+  ☐ invisible square note buttons
+    ☐ buttons light up when they are clicked - different colors for each colors
+    ☐ use jquery click location effect on spot where user clicks
+    ☐ rearrange quadrants
+      ☐ top-left=roadblocks, top-right=goals, bottom-left=stories, bottom-right=values
+  ☐ Build Profile Page
+    ☐ login section, saves to db 
+      ☐ create and delete accounts 
+    ☐ structure
+      ☐ jquery create page section that displays on dropdown the session data 
+        ☐ per session and per date
+        ☐ includes each session in each section
+        ☐ 
+    ☐ display chart per date/time and calculated score
+    ☐ display entry and exit mood
+    ☐ display heat map of session
+    ☐ ability to add notes to session
+  ☐ Drop down mood selections
+    ☐ change colors of mood selection boxes
+
+  ☐ Landing Page
+    ☐ Tutorial
+    ☐ what it means
+    ☐ how we score it
+    ☐ how to use it
+    ☐ testimonials
+    ☐ features
+    ☐ welcome - high level section on what it's all about
+    ☐ links
+      ☐ sign in
+      ☐ profile
+      ☐ start session
+      ☐ 
+
+
+
+General build stuff:
+  ☐ migrate to node, express & jade
+  ☐ structure MVC
+  ☐ get ready for Phonegap/Cordova
+  ☐ 
+
+Functionality:
+  ☐ hide/show parts of the page or create multi pages 
+  ☐ 3:00 timeout for full session
+  ☐ unlimited instrument session w/ no feedback or playback
+  ☐ instrument voice notes
+    ☐ while user interacts with the instrument they have the option to talk and enter notes into their session 
+
+  ☐ unlimited time for instrument session
+    ☐ no playback for unlimited session
+  ☐ how to quantify the data from instrument interaction
+      - How to quantify the quadrants
+         * scores for areas based on click interactions
+         * area of coverage per session
+         * which area did they spend their time in
+         * additional questions we're trying to answer
+         * willigness to participate score
+         * amount of clicks in sections
+         * length of time based on 3:00 session and amount of times per day
+  ☐ entered data tagged added to session
+  ☐ User authentication
+    ☐ 3 types of users  
+      ☐ personal I, personal II, administrator
+      ☐ rules to define each user type
+      ☐ features for each user type
+        ☐ personal I  
+          ☐ ability to use the instrument and save 3 sessions
+          ☐ sessions auto delete once user creates 4 four sessions
+          ☐ no ability to share or save
+        ☐ personal II
+          ☐ ability to save unlimited sessions (archive system maybe)
+          ☐ ability to share on fb
+          ☐ ability to add notes to sessions
+        ☐ administrative
+          ☐ ability to add clientbase to their profile
+          ☐ ability to see all session data per user assigned to their account
+          ☐ ability to add notes to sessions
+        ☐ goup plan / business 
+
+      ☐ Form Validation
+        ☐ find a form validation library like jquery validate or parsley
+        ☐ use it to validate the input fields
+        ☐ use it to validate the user info generated
+    
+  ☐ Settings for instrument 
+    ☐ different pads for sections
+    ☐ different sounds for pads
+    ☐ ability to set pad sounds
+    ☐ ability to set volume of pads
+    ☐ different note sounds
+    ☐ ability to set volume of notes
+    ☐ ability to set
+
+
+- Sonic representation of emotion over quadrants
+   * chord tones vs. scale
+   * internal vs. external tones and pads
+   * colors for buttons vs glyphs or words
+
+- Graphical representation of data
+   * how much to display to different user type (client or therapist)
+   * how much information to give each user type
+   * how to define the user type? 
+
+
+
+
+questions on saturday
+what techs to use for each part
+- user authentication
+  passport - 
+- form validation
+  - html5 validation - set up patterns
+  - something that can wait
+    - just add required to the input tags (attribute) 
+- multi page vs single page pros and cons
+  multi
+jquery library that has effects like polymer for touch effects
+- keyframe animation 
+how to handle the phone stuff
+- include fast click library
+  touch start touch end jquery events
+  media query to           if touch else mouse
+- hover effect overrides
+  last clicked does it === the same place
+- other phone stuff to be aware of
+
+building for mobile vs building for web
+html5 geolocation - check it out
+
+read the jquery document 
+
+
+
+
+feature branch workflow
+
+1. fork
+2. clone
+3. create a branch
+$ git checkout -b <branch name>
+4. code/hack
+5. commit/create pull request
+6. review code merge pull request
+7. sync your master with project master
+$ git checkout master
+$ git pull upstream
+$ git checkout -b <branch name>  
+
+
+dash application finds all the documentation
+zeal free version of dash
+
+what have youtried.com
+loopback.io - creates apis
+sqlize - a way to write strutured queries for a relational DB
+learn the syntax of sql syntax real fast
+learn python the hard way
+keen.io
+unbounce
+dayboard.co

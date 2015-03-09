@@ -1,0 +1,69 @@
+extends layout
+
+block content
+  .main-container
+    .home-container
+      .header
+        nav.navbar.navbar-default.color
+             .container-fluid
+               // Brand and toggle get grouped for better mobile display
+               .navbar-header
+                 button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                   span.sr-only Toggle navigation
+                   span.icon-bar
+                   span.icon-bar
+                   span.icon-bar   
+                 a.navbar-brand#header-title(href='#') Moodevator
+               // Collect the nav links, forms, and other content for toggling
+               #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                 ul.nav.navbar-nav.navbar-right
+                  li
+                    a(href='#') About
+                     span.sr-only (current)
+                  li
+                    a(href='#') Session
+                     span.sr-only (current)
+                  li
+                    a(href='#') Profile
+                     span.sr-only (current)
+                  li
+                    a(href="#", data-toggle='modal', data-target='#myModal')
+                      | Sign In  
+        
+          #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  h4#myModalLabel.modal-title Sign In
+                .modal-body
+                  h2 Create
+                  button.btn.btn-primary(type='button') Create your profile
+                  h2 Email
+                  button.btn.btn-primary(type='button') Sign in with Email
+                  h2 Google+
+                  button.btn.btn-primary(type='button') Sign in with Google+
+                  h2 FaceBook
+                  button.btn.btn-primary(type='button') Sign in with FaceBook
+                .modal-footer
+                  button.btn.btn-default(type='button', data-dismiss='modal') Close
+                  button.btn.btn-primary(type='button') Submit
+      .body-section
+        h3 How it Works
+        p yo
+        h3 Features
+        p these are the features
+        h3 Who it's for
+        p this is for everybody
+        h3 Tutorial
+        p here's what you do with it
+        h3 Testimonials
+        p here's all the people that love using it
+
+
+
+
+
+
+
