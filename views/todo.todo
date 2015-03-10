@@ -155,7 +155,13 @@ varianceWidths = _.reduce(function(acc, pt){return acc + (pt - meanWidths)^2}, w
 
 stdDevWidths = Math.sprt(varianceWidths)  
 
+acc = accumulate
+pt = point
 
+
+for more info see 
+
+http://derickbailey.com/2014/09/21/calculating-standard-deviation-with-array-map-and-array-reduce-in-javascript/
 
 
 

@@ -29,8 +29,8 @@ Pad.prototype.render = function(){
   // creates div but not append does append to itself an h1 & add classes
   var padQuad =  $("<div>")
     .addClass("col-xs-6 pad")
-    .addClass(this.name + '-pad')
-    .append("<h1> " + this.name + " </h1>");
+    .addClass(this.name + '-pad');
+    // .append("<h1 class='quad-word'> " + this.name + " </h1>");
   // creates an array of the result of calling render on each note in this pad
   var noteElements = this.notes.map( function(note) {
     return note.render();
@@ -81,19 +81,23 @@ var Note = function (note, volume){
 Note.prototype.render = function(){
   // create a new noteBtn div and appending an empty div to it
   var noteBtn = $("<div>")
-    .addClass("col-xs-4 note-btn")
+    .addClass("col-xs-4 note-btn note-btn-container")
     .append("<div></div>");
     // storing a reference to this 
   var note = this;
   var timeStart;
   // event handler for mousedown on NoteBtn
   noteBtn.on('mousedown', function(event){
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    $(this).css('backgroundColor', '#' + randomColor);
+    console.log(this);
     // reference to this as note accessing the howl property defined above and calling the fadeIn
     note.howl.fadeIn( note.volume, 2000 );
     timeStart = Date.now();
   });
   // event handler for mouseup on NoteBtn
   noteBtn.on('mouseup', function(event){
+    $(this).css('backgroundColor', 'transparent');
     note.howl.fadeOut(0, 1100);
     track.addNote(note, timeStart, Date.now());
     });
