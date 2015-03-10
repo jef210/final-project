@@ -2,8 +2,11 @@ var indexController = {
 	index: function(req, res) {
 		res.render('index');
 	},
-  instrumentController: function(req, res) {
+  instrument: function(req, res) {
     res.render('instrument');
+  },
+  moodEntry: function(req, res) {
+    res.render('moodEntry');
   }
 };
 

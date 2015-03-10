@@ -29,6 +29,7 @@ Pad.prototype.render = function(){
   // creates div but not append does append to itself an h1 & add classes
   var padQuad =  $("<div>")
     .addClass("col-xs-6 pad")
+    .addClass(this.name + '-pad')
     .append("<h1> " + this.name + " </h1>");
   // creates an array of the result of calling render on each note in this pad
   var noteElements = this.notes.map( function(note) {
@@ -147,9 +148,9 @@ var track = new Track ();
             ////// PAD INSTANCES //////
             
 var dorian = new Pad ('OBSTACLES', 'f_sharp_minor_pad.mp3');
-var lydian = new Pad ('VALUES', 'c_sharp_major_pad.mp3');
-var aeolian = new Pad ('STORIES', 'c_sharp_minor_pad.mp3');
 var ionian = new Pad ('GOALS', 'f_sharp_major_pad.mp3');
+var aeolian = new Pad ('STORIES', 'c_sharp_minor_pad.mp3');
+var lydian = new Pad ('VALUES', 'c_sharp_major_pad.mp3');
 
 
             ////// NOTE INSTANCES //////
@@ -293,14 +294,15 @@ dorian.notes.push(note_f_sharp_dorian_oct, note_b_dorian, note_g_sharp_dorian_oc
 
           ////// RENDER THE PADS //////
 
+$(".instrument-container").append(dorian.render());
 
 $(".instrument-container").append(ionian.render());
 
-$(".instrument-container").append(lydian.render());
-
 $(".instrument-container").append(aeolian.render());
 
-$(".instrument-container").append(dorian.render());
+$(".instrument-container").append(lydian.render());
+
+
 
 
 
