@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.index);
 app.get('/moodEntry', indexController.moodEntry);
 app.get('/instrument', indexController.instrument);
-// app.get('/moodExit', indexController.moodExit);
-// app.get('/profile', indexController.profile);
+app.get('/moodExit', indexController.moodExit);
+app.get('/profile', indexController.profile);
 
 
 var server = app.listen(8636, function() {

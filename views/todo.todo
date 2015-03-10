@@ -135,6 +135,31 @@ html5 geolocation - check it out
 
 read the jquery document 
 
+- animation.css - link ( //cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css )
+- green sock - link ( //cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js )
+
+- standard deviation calculations to determine the area of focus on the click events from the instrument interaction
+
+heights = [offset y]
+widths = [offset x]
+
+sumHeights = _.reduce(function(x,y){return x + y}, heights, 0)
+meanHeights = sumHeights / heights.length
+varianceHeights = _.reduce(function(acc, pt){return acc + (pt - meanHeight)^2}, heights, 0) / heights.length
+
+stdDevheights = Math.sprt(varianceHeight)  
+
+sumWidths = _.reduce(function(x,y){return x + y}, widths, 0)
+meanWidths = sumWidths / Widths.length
+varianceWidths = _.reduce(function(acc, pt){return acc + (pt - meanWidths)^2}, widths, 0) / widths.length
+
+stdDevWidths = Math.sprt(varianceWidths)  
+
+
+
+
+
+
 
 
 
