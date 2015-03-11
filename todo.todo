@@ -6,7 +6,7 @@ Display:
   ☐ Add Words to Sections
     ☐ goals, values, roadblocks, stories
       ☐ top-left=roadblocks, top-right=goals, bottom-left=stories, bottom-right=values
-      ☐ svg images for sections
+      ✔ svg images for sections @done (15-03-11 09:53)
     ☐ use jquery click location effect on spot where user clicks
   ✔ Drop down mood selections @done (15-03-10 19:35)
     ✔ change colors of mood selection boxes @done (15-03-10 19:43)
@@ -91,6 +91,8 @@ http://derickbailey.com/2014/09/21/calculating-standard-deviation-with-array-map
   
   ☐ instrument voice notes
     ☐ while user interacts with the instrument they have the option to talk and enter notes into their session 
+    ☐ add record voice button to instrument page
+    ☐ autotune option with sonicapi
 
 
 User authentication: 
