@@ -13,6 +13,14 @@ var indexController = {
   }, 
   profile: function(req, res) {
     res.render('profile-page');
+  },
+  startSession: function(req, res) {
+    // res.send(req.body);
+    req.session.startMood = req.body
+    res.redirect('/instrument');
+  },
+  exitSession: function(req, res) {
+    res.send({body:req.body, session: req.session});
   }
 };
 

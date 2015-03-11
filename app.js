@@ -42,8 +42,10 @@ app.use(bodyParser());
 app.get('/', indexController.index);
 app.get('/entry-mood', indexController.moodEntry);
 app.get('/instrument', indexController.instrument);
-app.get('exit-mood', indexController.moodExit);
+app.get('/exit-mood', indexController.moodExit);
 app.get('/profile-page', indexController.profile);
+app.post('/start-session', indexController.startSession)
+app.post('/exit-session', indexController.exitSession)
 
 // Add in the cookieParser and flash middleware so we can
 // use them later

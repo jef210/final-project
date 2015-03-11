@@ -123,11 +123,11 @@ block content
         .col-md-12
           .mood-chooser-entry-click-box
             h3#choose-mood Where are your thoughts right now?
-            form.form-inline
+            form.form-inline(action="/start-session" method="post")
+              input#start-mood(type="text" name="start-mood")
               .col-md-10
-                // <div class="row">
                 .form-group.form-goal
-                  input#goal-input.form-control(type='text', placeholder='Enter your thoughts here...')
+                  input#goal-input.form-control(type='text', name="start-thoughts", placeholder='Enter your thoughts here...')
               .col-md-2
                 button#goal-submit.btn.btn-default.btn-block(type='submit') Start Session
          

@@ -317,8 +317,20 @@ $(".instrument-container").append(lydian.render());
 
 $('.start-mood-select').on('click', 'li', function () {
   // this is the element we clikced on, $ wraps in jQuery so we can find it's children. then we get all the children of the li ( in this case it's the anchor tag). we get the text of the a tag. called chaining. method is function on an object. 
-  console.log($(this).children().text());
+  var startMood = $(this).children().text();
+  $('#start-mood').val(startMood);
 })
+
+$('#finish-instrument').on('click', function(){
+  window.location.pathname = '/exit-mood'
+})
+
+$('.exit-mood-select').on('click', 'li', function () {
+  // this is the element we clikced on, $ wraps in jQuery so we can find it's children. then we get all the children of the li ( in this case it's the anchor tag). we get the text of the a tag. called chaining. method is function on an object. 
+  var exitMood = $(this).children().text();
+  $('#exit-mood').val(exitMood);
+})
+
 
 
 

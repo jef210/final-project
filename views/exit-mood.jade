@@ -11,7 +11,7 @@ block content
               button#happy.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Happy
                 //- span.caret
-              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+              ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Fulfilled
                 li(role='presentation')
@@ -30,7 +30,7 @@ block content
               button#excited.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 |Excited
                 //- span.caret
-              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+              ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Ecstatic
                 li(role='presentation')
@@ -47,7 +47,7 @@ block content
               button#tender.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Tender
                 //- span.caret
-              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+              ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Intimate
                 li(role='presentation')
@@ -66,7 +66,7 @@ block content
               button#scared.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Scared
                 //- span.caret
-              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+              ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Tense
                 li(role='presentation')
@@ -84,7 +84,7 @@ block content
               button#angry.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Angry
                 //- span.caret
-              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+              ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Irritated
                 li(role='presentation')
@@ -103,7 +103,7 @@ block content
               button#sad.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Sad
                 //- span.caret
-              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+              ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Down
                 li(role='presentation')
@@ -123,13 +123,13 @@ block content
         .col-md-12
           .mood-chooser-entry-click-box
             h3#choose-mood Where are your thoughts right now?
-            form.form-inline
+            form.form-inline(action="/exit-session" method="post")
+              input#exit-mood(type="text" name="exit-mood")
               .col-md-10
-                // <div class="row">
                 .form-group.form-goal
-                  input#goal-input.form-control(type='text', placeholder='Enter your thoughts here...')
+                  input#goal-input.form-control(type='text', name="exit-thoughts", placeholder='Enter your thoughts here...')
               .col-md-2
-                button#goal-submit.btn.btn-default.btn-block(type='submit') Start Session
+                button#goal-submit.btn.btn-default.btn-block(type='submit') Exit to Profile Page
          
       //- br
       //- .row
