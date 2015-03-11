@@ -49,22 +49,25 @@ body {
 
 /*---------------------- MOOD SELECTION SECTION ----------------------*/
 #happy {
-  background-color: #38b616;
+  background-color: #8cff8c;
 }
 #excited {
-  background-color: #fdb900;
+  background-color: #ffc48c;
 }
 #tender {
-  background-color: #fba7f4;
+  background-color: #ffc6ff;
 }
 #scared {
-  background-color: #fbfd00;
+  background-color: #ffffb1;
 }
 #angry {
-  background-color: #f30707;
+  background-color: #ff8c8c;
 }
 #sad {
-  background-color: #6cb3fb;
+  background-color: #a5dbff;
+}
+#choose-mood {
+  text-align: center;
 }
 
 .emotion-button {

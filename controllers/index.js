@@ -12,7 +12,7 @@ var indexController = {
     res.render('exit-mood');
   }, 
   profile: function(req, res) {
-    res.render('profile');
+    res.render('profile-page');
   }
 };
 

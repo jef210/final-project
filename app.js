@@ -13,7 +13,7 @@ app.get('/', indexController.index);
 app.get('/entry-mood', indexController.moodEntry);
 app.get('/instrument', indexController.instrument);
 app.get('exit-mood', indexController.moodExit);
-app.get('/profile', indexController.profile);
+app.get('/profile-page', indexController.profile);
 
 
 var server = app.listen(8636, function() {

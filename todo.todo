@@ -8,8 +8,8 @@ Display:
       ☐ top-left=roadblocks, top-right=goals, bottom-left=stories, bottom-right=values
       ☐ svg images for sections
     ☐ use jquery click location effect on spot where user clicks
-  ☐ Drop down mood selections
-    ☐ change colors of mood selection boxes
+  ✔ Drop down mood selections @done (15-03-10 19:35)
+    ✔ change colors of mood selection boxes @done (15-03-10 19:43)
 Profile Page:
     ☐ login section, saves to db 
       ☐ create and delete accounts 
