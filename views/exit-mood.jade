@@ -5,48 +5,136 @@ block content
     .home-container
       .row
         .col-md-12
-          h1  Choose Your Mood
+          h3#choose-mood Choose Your Mood
           .mood-chooser-entry-click-box
             .dropdown.col-md-2.col-xs-4
               button#happy.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Happy
-                span.caret
+                //- span.caret
               ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
-                  a(role='menuitem', tabindex='-1', href='#') farts
+                  a(role='menuitem', tabindex='-1', href='#') Fulfilled
                 li(role='presentation')
-                  a(role='menuitem', tabindex='-1', href='#') Another action
+                  a(role='menuitem', tabindex='-1', href='#') Contented
                 li(role='presentation')
-                  a(role='menuitem', tabindex='-1', href='#') Something else here
+                  a(role='menuitem', tabindex='-1', href='#') Glad
                 li(role='presentation')
-                  a(role='menuitem', tabindex='-1', href='#') Separated link
+                  a(role='menuitem', tabindex='-1', href='#') Complete
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Satisfied
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Optimistic
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Pleased
             .col-md-2.col-xs-4
-              button#excited.emotion-button.btn-block Excited
+              button#excited.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
+                |Excited
+                //- span.caret
+              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Ecstatic
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Aroused
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Bouncy
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Nervous
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Perky
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Antsy
             .col-md-2.col-xs-4
-              button#tender.emotion-button.btn-block Tender
+              button#tender.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
+                | Tender
+                //- span.caret
+              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Intimate
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Loving
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Warm-Hearted
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Sympathetic
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Touched
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Kind
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Soft
             .col-md-2.col-xs-4
-              button#scared.emotion-button.btn-block Scared
+              button#scared.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
+                | Scared
+                //- span.caret
+              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Tense
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Nervous
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Anxious
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Jittery
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Frightened
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Panic
+
             .col-md-2.col-xs-4
-              button#angry.emotion-button.btn-block Angry
+              button#angry.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
+                | Angry
+                //- span.caret
+              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Irritated
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Resentful
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Miffed
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Upset
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Mad
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Furious
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Raging
             .col-md-2.col-xs-4
-              button#sad.emotion-button.btn-block Sad
+              button#sad.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
+                | Sad
+                //- span.caret
+              ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Down
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Blue
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Mopey
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Grieved
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Dejected
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Depressed
+                li(role='presentation')
+                  a(role='menuitem', tabindex='-1', href='#') Heartbroken
     
       .row
         .col-md-12
           .mood-chooser-entry-click-box
-            h1  What are you thinking about?
+            h3#thinking-about What are you thinking about?
             form.form-inline
               .col-md-10
                 // <div class="row">
                 .form-group.form-goal
-                  input#goal-input.form-control(type='text', placeholder='Enter A Goal')
+                  input#goal-input.form-control(type='text', placeholder='Enter what you\'re thinking about right now')
               .col-md-2
                 button#goal-submit.btn.btn-default.btn-block(type='submit') Submit
          
       br
       .row
         .col-md-6.col-md-offset-3
-          // <div class="row">
+         
           .col-md-6
             button.btn.btn-primary.btn-lg.btn-block(type='button') Profile
           .col-md-6
