@@ -5,6 +5,7 @@ body {
 .main-container {
   margin: auto;
   width: 100%;
+  max-width: 960px;
 
 }
 .home-container {
@@ -128,7 +129,34 @@ body {
 
 
 /*-------------------------- INSTRUMENT  ----------------------*/
+
+.OBSTACLES-pad {
+   background: url('./images/obstacles2.svg') no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+   
+}
+.GOALS-pad {
+  background: url('./images/goals2.svg') no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+  
+}
+.STORIES-pad {
+  background: url('./images/stories2.svg') no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+  
+}
+.VALUES-pad {
+  background: url('./images/values2.svg') no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+  
+}
+
 .top-left-quad {
+ 
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-right: 1px solid black;
@@ -171,13 +199,14 @@ body {
 .note-btn {
  background-color: transparent;
  padding: 0px;
+ border-radius: 100px;
 }
 
 .note-btn div {
   background-color: none;
   opacity: .3;
   width: 100%;
-  height: 50px;
+  height: 80px;
   border-radius: 5px;
   transition: all 0.5s;
 }

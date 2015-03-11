@@ -3,9 +3,9 @@ Display:
   ✔ invisible square note buttons @done (15-03-10 17:59)
     ✔ buttons light up when they are clicked - different colors for each colors @done (15-03-10 17:59)
     ✔ rearrange quadrants @done (15-03-10 17:59)
-  ☐ Add Words to Sections
-    ☐ goals, values, roadblocks, stories
-      ☐ top-left=roadblocks, top-right=goals, bottom-left=stories, bottom-right=values
+  ✔ Add Words to Sections @done (15-03-11 13:34)
+    ✔ goals, values, roadblocks, stories @done (15-03-11 13:34)
+      ✔ top-left=roadblocks, top-right=goals, bottom-left=stories, bottom-right=values @done (15-03-11 13:34)
       ✔ svg images for sections @done (15-03-11 09:53)
     ☐ use jquery click location effect on spot where user clicks
   ✔ Drop down mood selections @done (15-03-10 19:35)
@@ -45,6 +45,9 @@ General build stuff:
   ✔ hide/show parts of the page or create multi pages  @done (15-03-10 18:00)
   ☐ structure MVC
   ☐ get ready for Phonegap/Cordova
+    ☐ make it so it starts the pad track on 1st click of 1st pad
+    ☐ make it so when user clicks on another it stops the 1st sound and plays the 2nd
+
   ☐ 
 
 Functionality:
