@@ -123,6 +123,7 @@ body {
   margin: auto;
   /*padding-top: 10px;*/
   width: 100%;
+  border: 2px solid black;
 }
 
 
@@ -156,39 +157,38 @@ body {
 }
 
 .top-left-quad {
- 
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  border-radius: 5px;
+  /*border-top: 2px solid black;*/
+  /*border-left: 2px solid black;*/
+  /*border-right: 1px solid black;*/
+  /*border-bottom: 1px solid black;*/
+  /*border-radius: 5px;*/
 }
 .top-right-quad {
-  border-top: 2px solid black;
+  /*border-top: 2px solid black;*/
   border-right:2px solid black;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  border-radius: 5px;
+  /*border-left: 1px solid black;*/
+  /*border-bottom: 1px solid black;*/
+  /*border-radius: 5px;*/
 }
 .bottom-left-quad {
-  border-top: 1px solid black;
+  /*border-top: 1px solid black;*/
   border-left:2px solid black;
-  border-right: 1px solid black;
+  /*border-right: 1px solid black;*/
   border-bottom: 2px solid black;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
-.bottom-right-quad {
+/*.bottom-right-quad {
   border-top: 1px solid black;
   border-right:2px solid black;
   border-left: 1px solid black;
   border-bottom: 2px solid black;
   border-radius: 5px;
-}
-.pad {
+}*/
+/*.pad {
   border: 1px solid black;
   border-radius: 5px;
   padding: 0px;
-}
+}*/
 
 
 

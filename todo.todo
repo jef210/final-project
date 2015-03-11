@@ -68,7 +68,7 @@ Functionality:
          * amount of clicks in sections
          * length of time based on 3:00 session and amount of times per day
 
-         heights = [offset y]
+heights = [offset y]
 widths = [offset x]
 
 sumHeights = _.reduce(function(x,y){return x + y}, heights, 0)
@@ -81,7 +81,7 @@ sumWidths = _.reduce(function(x,y){return x + y}, widths, 0)
 meanWidths = sumWidths / Widths.length
 varianceWidths = _.reduce(function(acc, pt){return acc + (pt - meanWidths)^2}, widths, 0) / widths.length
 
-stdDevWidths = Math.sprt(varianceWidths)  
+stdDevWidths = Math.sqrt(varianceWidths)  
 
 acc = accumulate
 pt = point

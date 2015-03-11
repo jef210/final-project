@@ -90,7 +90,7 @@ Note.prototype.render = function(){
   noteBtn.on('mousedown', function(event){
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
     $(this).css('backgroundColor', '#' + randomColor);
-    
+    $(this).css('border-radius', '10px');
     console.log(this);
     // reference to this as note accessing the howl property defined above and calling the fadeIn
     note.howl.fadeIn( note.volume, 2000 );
