@@ -10,9 +10,9 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', indexController.index);
-app.get('/moodEntry', indexController.moodEntry);
+app.get('/entry-mood', indexController.moodEntry);
 app.get('/instrument', indexController.instrument);
-app.get('/moodExit', indexController.moodExit);
+app.get('exit-mood', indexController.moodExit);
 app.get('/profile', indexController.profile);
 
 

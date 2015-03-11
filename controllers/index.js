@@ -3,13 +3,13 @@ var indexController = {
 		res.render('index');
 	},
   moodEntry: function(req, res) {
-    res.render('moodEntry');
+    res.render('entry-mood');
   },
   instrument: function(req, res) {
     res.render('instrument');
   },
   moodExit: function(req, res) {
-    res.render('moodExit');
+    res.render('exit-mood');
   }, 
   profile: function(req, res) {
     res.render('profile');

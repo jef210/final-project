@@ -1,13 +1,16 @@
 Relational Synth To Do:
 Display:
+  ✔ invisible square note buttons @done (15-03-10 17:59)
+    ✔ buttons light up when they are clicked - different colors for each colors @done (15-03-10 17:59)
+    ✔ rearrange quadrants @done (15-03-10 17:59)
   ☐ Add Words to Sections
     ☐ goals, values, roadblocks, stories
-  ☐ invisible square note buttons
-    ☐ buttons light up when they are clicked - different colors for each colors
-    ☐ use jquery click location effect on spot where user clicks
-    ☐ rearrange quadrants
       ☐ top-left=roadblocks, top-right=goals, bottom-left=stories, bottom-right=values
-  ☐ Build Profile Page
+      ☐ svg images for sections
+    ☐ use jquery click location effect on spot where user clicks
+  ☐ Drop down mood selections
+    ☐ change colors of mood selection boxes
+Profile Page:
     ☐ login section, saves to db 
       ☐ create and delete accounts 
     ☐ structure
@@ -16,13 +19,12 @@ Display:
         ☐ includes each session in each section
         ☐ 
     ☐ display chart per date/time and calculated score
+    ☐ display standard deviation chart
     ☐ display entry and exit mood
     ☐ display heat map of session
     ☐ ability to add notes to session
-  ☐ Drop down mood selections
-    ☐ change colors of mood selection boxes
 
-  ☐ Landing Page
+Landing Page:
     ☐ Tutorial
     ☐ what it means
     ☐ how we score it
@@ -39,18 +41,18 @@ Display:
 
 
 General build stuff:
-  ☐ migrate to node, express & jade
+  ✔ migrate to node, express & jade @done (15-03-10 18:00)
+  ✔ hide/show parts of the page or create multi pages  @done (15-03-10 18:00)
   ☐ structure MVC
   ☐ get ready for Phonegap/Cordova
   ☐ 
 
 Functionality:
-  ☐ hide/show parts of the page or create multi pages 
+    - multi page
   ☐ 3:00 timeout for full session
+    ☐ function written poorly but in the right place (ready to be fixed)
   ☐ unlimited instrument session w/ no feedback or playback
-  ☐ instrument voice notes
-    ☐ while user interacts with the instrument they have the option to talk and enter notes into their session 
-
+    ☐ 
   ☐ unlimited time for instrument session
     ☐ no playback for unlimited session
   ☐ how to quantify the data from instrument interaction
@@ -62,8 +64,37 @@ Functionality:
          * willigness to participate score
          * amount of clicks in sections
          * length of time based on 3:00 session and amount of times per day
+
+         heights = [offset y]
+widths = [offset x]
+
+sumHeights = _.reduce(function(x,y){return x + y}, heights, 0)
+meanHeights = sumHeights / heights.length
+varianceHeights = _.reduce(function(acc, pt){return acc + (pt - meanHeight)^2}, heights, 0) / heights.length
+
+stdDevheights = Math.sprt(varianceHeight)  
+
+sumWidths = _.reduce(function(x,y){return x + y}, widths, 0)
+meanWidths = sumWidths / Widths.length
+varianceWidths = _.reduce(function(acc, pt){return acc + (pt - meanWidths)^2}, widths, 0) / widths.length
+
+stdDevWidths = Math.sprt(varianceWidths)  
+
+acc = accumulate
+pt = point
+
+
+for more info see 
+
+http://derickbailey.com/2014/09/21/calculating-standard-deviation-with-array-map-and-array-reduce-in-javascript/
   ☐ entered data tagged added to session
-  ☐ User authentication
+  
+  ☐ instrument voice notes
+    ☐ while user interacts with the instrument they have the option to talk and enter notes into their session 
+
+
+User authentication: 
+  - passportjs
     ☐ 3 types of users  
       ☐ personal I, personal II, administrator
       ☐ rules to define each user type
@@ -86,8 +117,8 @@ Functionality:
         ☐ find a form validation library like jquery validate or parsley
         ☐ use it to validate the input fields
         ☐ use it to validate the user info generated
-    
-  ☐ Settings for instrument 
+
+Settings for instrument:
     ☐ different pads for sections
     ☐ different sounds for pads
     ☐ ability to set pad sounds
@@ -140,28 +171,7 @@ read the jquery document
 
 - standard deviation calculations to determine the area of focus on the click events from the instrument interaction
 
-heights = [offset y]
-widths = [offset x]
 
-sumHeights = _.reduce(function(x,y){return x + y}, heights, 0)
-meanHeights = sumHeights / heights.length
-varianceHeights = _.reduce(function(acc, pt){return acc + (pt - meanHeight)^2}, heights, 0) / heights.length
-
-stdDevheights = Math.sprt(varianceHeight)  
-
-sumWidths = _.reduce(function(x,y){return x + y}, widths, 0)
-meanWidths = sumWidths / Widths.length
-varianceWidths = _.reduce(function(acc, pt){return acc + (pt - meanWidths)^2}, widths, 0) / widths.length
-
-stdDevWidths = Math.sprt(varianceWidths)  
-
-acc = accumulate
-pt = point
-
-
-for more info see 
-
-http://derickbailey.com/2014/09/21/calculating-standard-deviation-with-array-map-and-array-reduce-in-javascript/
 
 
 
