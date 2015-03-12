@@ -1,3 +1,4 @@
 node_modules
 public/note_sounds_mp3
 public/pads
+.DS_Store
