@@ -13,18 +13,30 @@ var indexController = {
   },
   moodExit: function(req, res) {
     res.render('exit-mood');
-  }, 
+  },
   profile: function(req, res) {
     res.render('profile-page');
   },
   startSession: function(req, res) {
     // res.send(req.body);
-    req.session.startMood = req.body
+    req.session.startMood = req.body;
     res.redirect('/instrument');
   },
   exitSession: function(req, res) {
-    res.send({body:req.body, session: req.session});
-  }
+		var exitMood = req.body;
+		var track = req.session.track;
+		var startMood = req.session.startMood;
+    res.send({
+			startMood: startMood,
+			exitMood: exitMood,
+			track: track
+		});
+  },
+
+	saveInstrument: function(req, res){
+		req.session.track = req.body.notes;
+		res.sendStatus(200);
+	}
 };
 
 module.exports = indexController;
