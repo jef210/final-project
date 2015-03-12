@@ -70,7 +70,12 @@ body {
 #choose-mood {
   text-align: center;
 }
-
+#start-mood {
+  display: none;
+}
+#exit-mood {
+  display: none;
+}
 .emotion-button {
   /*width: 15.5%;*/
   height: 100%;
