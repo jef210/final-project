@@ -3,14 +3,97 @@ extends layout
 block content
   .main-container
     .home-container
-        .row
-          .col-xs-6
-            h1 Profile
-            .goals-mood-most-recent
-              h2 Most Recent Session
-              ul
-                li Date/Time:
-                li Starting Mood:
-                li Goal:
-                li Ending Mood:
-                li What's holding you back:
+      .header
+        nav.navbar.navbar-default.color
+             .container-fluid
+               // Brand and toggle get grouped for better mobile display
+               .navbar-header
+                 button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                   span.sr-only Toggle navigation
+                   span.icon-bar
+                   span.icon-bar
+                   span.icon-bar   
+                 a.navbar-brand#header-title(href='/') Moodevator
+               // Collect the nav links, forms, and other content for toggling
+               #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                 ul.nav.navbar-nav.navbar-right
+                  li
+                    a(href='/about') About
+                     span.sr-only (current)
+                  li
+                    a(href='/entry-mood') Session
+                     span.sr-only (current)
+                  li
+                    a(href='/profile-page') Profile
+                     span.sr-only (current)
+                  li
+                    a(href="#", data-toggle='modal', data-target='#myModal')
+                      | Sign In  
+        
+          #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  h4#myModalLabel.modal-title Sign In
+                .modal-body
+                  h2 Create
+                  button.btn.btn-primary(type='button') Create your profile
+                  h2 Email
+                  button.btn.btn-primary(type='button') Sign in with Email
+                  h2 Google+
+                  button.btn.btn-primary(type='button') Sign in with Google+
+                  h2 FaceBook
+                  button.btn.btn-primary(type='button') Sign in with FaceBook
+                .modal-footer
+                  button.btn.btn-default(type='button', data-dismiss='modal') Close
+                  button.btn.btn-primary(type='button') Submit
+          .body-section
+            .row
+              .col-xs-12
+                h2 Your Profile
+                .goals-mood-most-recent
+                  h3 Sessions
+                  #accordion.panel-group(role="tablist", aria-multiselectable="true")
+                    .panel.panel-default
+                      #headingOne.panel-heading(role="tab")
+                        h4.panel-title
+                          a(data-toggle="collapse", data-parent="#accordion", href="#collapseOne", aria-expanded="true", aria-controls="collapseOne")
+                            | Session 1
+                      #collapseOne.panel-collapse.collapse.in(role="tabpanel", aria-labelledby="headingOne")
+                        .panel-body
+                          ul
+                            li Date/time
+                            li stuff
+                            li stuff
+                           
+                    .panel.panel-default
+                      #headingTwo.panel-heading(role="tab")
+                        h4.panel-title
+                          a.collapsed(data-toggle="collapse", data-parent="#accordion", href="#collapseTwo", aria-expanded="false", aria-controls="collapseTwo")
+                            | Session 2
+                      #collapseTwo.panel-collapse.collapse(role="tabpanel", aria-labelledby="headingTwo")
+                        .panel-body
+                          ul
+                            li Date/time
+                            li stuff
+                            li stuff
+                    .panel.panel-default
+                      #headingThree.panel-heading(role="tab")
+                        h4.panel-title
+                          a.collapsed(data-toggle="collapse", data-parent="#accordion", href="#collapseThree", aria-expanded="false", aria-controls="collapseThree")
+                            | Session 3
+                      #collapseThree.panel-collapse.collapse(role="tabpanel", aria-labelledby="headingThree")
+                        .panel-body
+                          ul
+                            li Date/time
+                            li stuff
+                            li stuff
+
+                
+
+
+                 
+                    
+                    

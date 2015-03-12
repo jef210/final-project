@@ -26,11 +26,12 @@ var indexController = {
 		var exitMood = req.body;
 		var track = req.session.track;
 		var startMood = req.session.startMood;
+    res.redirect('/profile-page');
     res.send({
-			startMood: startMood,
-			exitMood: exitMood,
-			track: track
-		});
+      startMood: startMood,
+      exitMood: exitMood,
+      track: track
+    });
   },
 
 	saveInstrument: function(req, res){

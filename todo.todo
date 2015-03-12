@@ -7,9 +7,9 @@ Display:
     ✔ goals, values, roadblocks, stories @done (15-03-11 13:34)
       ✔ top-left=roadblocks, top-right=goals, bottom-left=stories, bottom-right=values @done (15-03-11 13:34)
       ✔ svg images for sections @done (15-03-11 09:53)
-    ☐ use jquery click location effect on spot where user clicks
   ✔ Drop down mood selections @done (15-03-10 19:35)
     ✔ change colors of mood selection boxes @done (15-03-10 19:43)
+    ☐ use jquery click location effect on spot where user clicks
 Profile Page:
     ☐ login section, saves to db 
       ☐ create and delete accounts 
@@ -17,7 +17,7 @@ Profile Page:
       ☐ jquery create page section that displays on dropdown the session data 
         ☐ per session and per date
         ☐ includes each session in each section
-        ☐ 
+        
     ☐ display chart per date/time and calculated score
     ☐ display standard deviation chart
     ☐ display entry and exit mood
@@ -51,7 +51,13 @@ General build stuff:
   ☐ 
 
 Functionality:
-    - multi page
+  ☐ routing to pages
+    ✔ main instrument and mood session routes @done (15-03-12 11:18)
+    ☐ other routing TBD
+  ✔ session to DB @done (15-03-12 11:18)
+    ☐ pull session data to profile-page
+    ☐ display session data on profile page
+
   ☐ 3:00 timeout for full session
     ☐ function written poorly but in the right place (ready to be fixed)
   ☐ unlimited instrument session w/ no feedback or playback
