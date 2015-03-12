@@ -39,15 +39,6 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser());
 
-app.get('/', indexController.index);
-app.get('/entry-mood', indexController.moodEntry);
-app.get('/instrument', indexController.instrument);
-app.get('/exit-mood', indexController.moodExit);
-app.get('/profile-page', indexController.profile);
-app.get('/about', indexController.about);
-app.post('/start-session', indexController.startSession)
-app.post('/exit-session', indexController.exitSession)
-
 // Add in the cookieParser and flash middleware so we can
 // use them later
 app.use(cookieParser());
@@ -62,6 +53,15 @@ app.use(passport.initialize());
 // Hook in the passport session management into the middleware chain.
 app.use(passport.session());
 
+app.get('/', indexController.index);
+app.get('/entry-mood', indexController.moodEntry);
+app.get('/instrument', indexController.instrument);
+app.get('/exit-mood', indexController.moodExit);
+app.get('/profile-page', indexController.profile);
+app.get('/about', indexController.about);
+app.post('/start-session', indexController.startSession)
+app.post('/exit-session', indexController.exitSession)
+app.post('/instrument/save', indexController.saveInstrument);
 
 // Our get request for viewing the login page
 app.get('/auth/login', authenticationController.login);

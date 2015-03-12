@@ -77,13 +77,13 @@ var Note = function (note, volume){
 /**
  * Render an individual note
  * @return {jQuery} DOM representation of a note
- */ 
+ */
 Note.prototype.render = function(){
   // create a new noteBtn div and appending an empty div to it
   var noteBtn = $("<div>")
     .addClass("col-xs-4 note-btn note-btn-container")
     .append("<div></div>");
-    // storing a reference to this 
+    // storing a reference to this
   var note = this;
   var timeStart;
   // event handler for mousedown on NoteBtn
@@ -120,13 +120,13 @@ var Track = function(){
  */
 Track.prototype.addNote = function (note, timeStart, timeEnd) {
   // pushing an object literal on to the notes array
-  this.notes.push({ 
+  this.notes.push({
     note:note, timeStart:timeStart, timeEnd:timeEnd
   });
 };
 
  // Method to play the track back with timestamped notes and pads
- 
+
 Track.prototype.play = function (){
   // tells it what the first note starttime is
   var startTime = this.notes[0].timeStart;
@@ -151,7 +151,7 @@ var track = new Track ();
 
 
             ////// PAD INSTANCES //////
-            
+
 var dorian = new Pad ('OBSTACLES', 'f_sharp_minor_pad.mp3');
 var ionian = new Pad ('GOALS', 'f_sharp_major_pad.mp3');
 var aeolian = new Pad ('STORIES', 'c_sharp_minor_pad.mp3');
@@ -159,7 +159,7 @@ var lydian = new Pad ('VALUES', 'c_sharp_major_pad.mp3');
 
 
             ////// NOTE INSTANCES //////
-          
+
                 /// F# IONIAN ///
 
 // F# Oct
@@ -316,22 +316,32 @@ $(".instrument-container").append(lydian.render());
 //////// START MOOD SELECTION /////
 
 $('.start-mood-select').on('click', 'li', function () {
-  // this is the element we clikced on, $ wraps in jQuery so we can find it's children. then we get all the children of the li ( in this case it's the anchor tag). we get the text of the a tag. called chaining. method is function on an object. 
+  // this is the element we clikced on, $ wraps in jQuery so we can find it's children. then we get all the children of the li ( in this case it's the anchor tag). we get the text of the a tag. called chaining. method is function on an object.
   var startMood = $(this).children().text();
   $('#start-mood').val(startMood);
 })
 
 $('#finish-instrument').on('click', function(){
-  window.location.pathname = '/exit-mood'
+  // Send the saved track information up via ajax,
+  // and when it's done, we'll redirect
+
+  // First, we need to massage the track data into a
+  // useable structure (taking out Howl, for instance)
+  var notesToSend = track.notes.map(function(trackItem){
+    return {
+      timeEnd: trackItem.timeEnd,
+      timeStart: trackItem.timeStart,
+      note: trackItem.note.note,
+      volume: trackItem.note.volume
+    };
+  });
+  $.post('/instrument/save', {notes: notesToSend}, function(data){
+    window.location.pathname = '/exit-mood'
+  });
 })
 
 $('.exit-mood-select').on('click', 'li', function () {
-  // this is the element we clikced on, $ wraps in jQuery so we can find it's children. then we get all the children of the li ( in this case it's the anchor tag). we get the text of the a tag. called chaining. method is function on an object. 
+  // this is the element we clikced on, $ wraps in jQuery so we can find it's children. then we get all the children of the li ( in this case it's the anchor tag). we get the text of the a tag. called chaining. method is function on an object.
   var exitMood = $(this).children().text();
   $('#exit-mood').val(exitMood);
 })
-
-
-
-
-
