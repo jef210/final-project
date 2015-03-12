@@ -2,6 +2,9 @@ var indexController = {
 	index: function(req, res) {
 		res.render('index');
 	},
+  about: function(req, res) {
+    res.render('about');
+  },
   moodEntry: function(req, res) {
     res.render('entry-mood');
   },

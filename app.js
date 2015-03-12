@@ -44,6 +44,7 @@ app.get('/entry-mood', indexController.moodEntry);
 app.get('/instrument', indexController.instrument);
 app.get('/exit-mood', indexController.moodExit);
 app.get('/profile-page', indexController.profile);
+app.get('/about', indexController.about);
 app.post('/start-session', indexController.startSession)
 app.post('/exit-session', indexController.exitSession)
 
