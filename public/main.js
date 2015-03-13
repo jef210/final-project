@@ -345,3 +345,4 @@ $('.exit-mood-select').on('click', 'li', function () {
   var exitMood = $(this).children().text();
   $('#exit-mood').val(exitMood);
 })
+

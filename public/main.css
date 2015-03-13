@@ -270,8 +270,14 @@ body {
 
 
 
-/*-------------------------- AUDIO DATA CHARTS ------------------------------------*/
-
+/*-------------------------- CHARTS ------------------------------------*/
+#session-chart {
+  display: inline-block;
+  float: right;
+}
+#container {
+  float: right;
+}
 
 
 

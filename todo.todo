@@ -216,3 +216,39 @@ learn python the hard way
 keen.io
 unbounce
 dayboard.co
+
+
+
+
+
+
+lets get a nice granular list going for everything I'll need to do to get all these build using pseudo code and task items
+
+
+charts
+how do i append it to the page (jade is still weird for me)
+require high charts?
+how do I write the function to get the data into the chart for each session (pull it from DB)
+how i set it up to work
+did i install everything I need and how to tell
+steps to accomplish adding external things like charts, maps, or audio apis to page
+
+audio
+what are the steps I will need to accomplish to record the voice track and play it back with the track play method
+autotune api? 
+
+
+passport
+how do i ...
+
+mongo
+tasks to accomplish to get the Db connected
+tasks to accompish the connection to the db
+steps and tasks to take this end to end
+
+
+
+
+
+
+
