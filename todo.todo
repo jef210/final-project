@@ -226,23 +226,34 @@ lets get a nice granular list going for everything I'll need to do to get all th
 
 
 charts
-how do i append it to the page (jade is still weird for me)
-require high charts?
-how do I write the function to get the data into the chart for each session (pull it from DB)
-how i set it up to work
 did i install everything I need and how to tell
+require high charts?
+how i set it up to work
 steps to accomplish adding external things like charts, maps, or audio apis to page
+how do i append it to the page (jade is still weird for me)
+when I write my function to plot my graph how to get it to and from the DB
+
+
+profile page
+append the session data with the graph to the DOM upon session completion
+
 
 audio
 what are the steps I will need to accomplish to record the voice track and play it back with the track play method
 autotune api? 
+should I handle the start of recording voice by making it so 
 
 
 passport
-how do i ...
+how do i 
+create different user types ( admin & personal)
+how to add different features for each user type
+how does that all work - high level understanding
+
 
 mongo
 tasks to accomplish to get the Db connected
+I need a Schema?
 tasks to accompish the connection to the db
 steps and tasks to take this end to end
 

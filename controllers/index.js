@@ -33,7 +33,6 @@ var indexController = {
       track: track
     });
   },
-
 	saveInstrument: function(req, res){
 		req.session.track = req.body.notes;
 		res.sendStatus(200);
