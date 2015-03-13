@@ -56,8 +56,8 @@ General build stuff:
     ☐ make it so when user clicks on another it stops the 1st sound and plays the 2nd
 
 Setting up Mongo:
- ☐ create a model file in models
- ☐ add a mongoose schema to that file
+ ✔ create a model file in models @done (15-03-13 16:06)
+ ✔ add a mongoose schema to that file @done (15-03-13 16:06)
  ☐ schema needs to match up with whats console logged object with info about start, notes, end
  ☐ create mongoose model
  ☐ in exit session require the model

@@ -29,7 +29,7 @@ var authenticationController = require('./controllers/authentication');
 
 
 // Connect to the database
-mongoose.connect('mongodb://localhost/moodevator');
+mongoose.connect('mongodb://localhost/emotetron9000');
 
 
 // Define a base express app...

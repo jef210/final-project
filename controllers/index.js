@@ -24,13 +24,21 @@ var indexController = {
   },
   exitSession: function(req, res) {
 		var exitMood = req.body;
+    var timeStamp = req.session.timeStamp;
+    var entryMood: req.session.entryMood;
+    var entryThoughts: req.session.entryThoughts;
 		var track = req.session.track;
-		var startMood = req.session.startMood;
-    res.redirect('/profile-page');
+    var exitMood = req.session.exitMood;
+    var exitThoughts = req.session.exitThoughts;
+    var moodShift = req.session.moodShift;
     res.send({
-      startMood: startMood,
+      timeStamp: timeStamp,
+      entryMood: entryMood,
       exitMood: exitMood,
-      track: track
+      track: track,
+      exitMood: exitMood,
+      exitThoughts: exitThoughts,
+      moodShift: moodShift
     });
   },
 	saveInstrument: function(req, res){
