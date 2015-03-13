@@ -1,0 +1,63 @@
+
+//-           var context = new AudioContext();
+
+//- navigator.getUserMedia({audio: true}, function(stream) {
+//-   var microphone = context.createMediaStreamSource(stream);
+//-   var filter = context.createBiquadFilter();
+
+//-   // microphone -> filter -> destination.
+//-   microphone.connect(filter);
+//-   filter.connect(context.destination);
+//- }, errorCallback);
+
+//- http://www.html5rocks.com/en/tutorials/getusermedia/intro/#toc-webaudio-api
+//- http://updates.html5rocks.com/2012/09/Live-Web-Audio-Input-Enabled
+//- https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getUserMedia
+
+//- grabbed this code from the MDN
+
+//- navigator.getUserMedia = ( navigator.getUserMedia ||
+//-                        navigator.webkitGetUserMedia ||
+//-                        navigator.mozGetUserMedia ||
+//-                        navigator.msGetUserMedia);
+
+//- if (navigator.getUserMedia) {
+//-    navigator.getUserMedia (
+
+//-       // constraints
+//-       {
+//-          video: true,
+//-          audio: true
+//-       },
+
+//-       // successCallback
+//-       function(localMediaStream) {
+//-          var video = document.querySelector('video');
+//-          video.src = window.URL.createObjectURL(localMediaStream);
+//-          // Do something with the video here, e.g. video.play()
+//-       },
+
+//-       // errorCallback
+//-       function(err) {
+//-          console.log("The following error occured: " + err);
+//-       }
+//-    );
+//- } else {
+//-    console.log("getUserMedia not supported");
+//- }
+
+
+//- http://www.w3.org/TR/html-media-capture/
+//- <form action="server.cgi" method="post" enctype="multipart/form-data">
+//-   <input type="file" name="audio" accept="audio/*" capture>
+//-   <input type="submit" value="Upload">
+//- </form>
+
+
+
+//- html audio stuff from w3schools
+//- http://www.w3schools.com/html/html5_audio.asp
+
+
+      
+    
