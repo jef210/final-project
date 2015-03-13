@@ -1,11 +1,7 @@
-// http://api.highcharts.com/highcharts#global
 
-// boring bar graph
-
-var chart = new Highcharts.Chart({
-
+$(function () { 
+    $('#session-chart').highcharts({
         chart: {
-            renderTo: 'container',
             type: 'bar'
         },
         title: {
@@ -21,12 +17,49 @@ var chart = new Highcharts.Chart({
         },
         series: [{
             name: 'Jane',
-            data: [1, 0, 4]},
-        {
+            data: [1, 0, 4]
+        }, {
             name: 'John',
-            data: [5, 7, 3]}]
+            data: [5, 7, 3]
+        }]
     });
 });
+
+
+
+
+
+
+
+// http://api.highcharts.com/highcharts#global
+
+// boring bar graph
+
+// var chart = new Highcharts.Chart({
+
+//         chart: {
+//             renderTo: 'container',
+//             type: 'bar'
+//         },
+//         title: {
+//             text: 'Fruit Consumption'
+//         },
+//         xAxis: {
+//             categories: ['Apples', 'Bananas', 'Oranges']
+//         },
+//         yAxis: {
+//             title: {
+//                 text: 'Fruit eaten'
+//             }
+//         },
+//         series: [{
+//             name: 'Jane',
+//             data: [1, 0, 4]},
+//         {
+//             name: 'John',
+//             data: [5, 7, 3]}]
+//     });
+// });
 
 
 
