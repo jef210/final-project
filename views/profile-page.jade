@@ -63,7 +63,6 @@ block content
                 h2 Your Profile
                 .goals-mood-most-recent
                   h3 Sessions
-                  #session-chart(style='width:100%; height:400px;')
                   #accordion.panel-group(role="tablist", aria-multiselectable="true")
                     .panel.panel-default
                       #headingOne.panel-heading(role="tab")
@@ -72,13 +71,15 @@ block content
                             | Session 1
                       #collapseOne.panel-collapse.collapse.in(role="tabpanel", aria-labelledby="headingOne")
                         .panel-body
-                          ul
-                            li Date/time
-                            li stuff
-                            li stuff
-                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+                          .col-lg-2
+                            ul
+                              li Date/time
+                              li stuff
+                              li stuff
+                              <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+                          .col-lg-10
                             #session-chart(style="width:100%; height:400px;")
                     .panel.panel-default
                       #headingTwo.panel-heading(role="tab")

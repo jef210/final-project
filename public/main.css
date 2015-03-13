@@ -25,7 +25,8 @@ body {
   padding-right: 20px;
 }
 .body-section {
-  margin-left: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .body-section h3 {
   color: #777;
@@ -124,6 +125,12 @@ body {
 
 
 /*----------------------------- INSTRUMENT STRUCTURE ------------------------*/
+
+.align-instrument-icons {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .instrument-container {
   background: url('./images/pastel_colorwheel.jpg') no-repeat;
   background-position: center;
@@ -133,7 +140,7 @@ body {
   /*padding-top: 10px;*/
   width: 100%;
   border: 10px solid grey;
-  border-radius: 20px; 
+  border-radius: 30%; 
 }
 
 
@@ -144,25 +151,25 @@ body {
 .OBSTACLES-pad {
    background: url('./images/obstacles2.svg') no-repeat;
    background-position: center;
-   background-size: 80% 80%;
+   background-size: 60% 60%;
    
 }
 .GOALS-pad {
   background: url('./images/goals2.svg') no-repeat;
    background-position: center;
-   background-size: 80% 80%;
+   background-size: 60% 60%;
   
 }
 .STORIES-pad {
   background: url('./images/stories2.svg') no-repeat;
    background-position: center;
-   background-size: 80% 80%;
+   background-size: 60% 60%;
   
 }
 .VALUES-pad {
   background: url('./images/values2.svg') no-repeat;
    background-position: center;
-   background-size: 80% 80%;
+   background-size: 60% 60%;
   
 }
 
@@ -233,9 +240,8 @@ body {
 /*------------------------------- FOOTER ----------------------------*/
 
 .exit-instrument {
-  width: 100%;
+  width: 60%;
   padding: 10px;
-  background-color: lightgrey;
   text-align: center;
   margin: auto;
   
@@ -273,10 +279,11 @@ body {
 /*-------------------------- CHARTS ------------------------------------*/
 #session-chart {
   display: inline-block;
-  float: right;
+  max-width: 100%;
+  max-height: 100%;
 }
 #container {
-  float: right;
+  
 }
 
 

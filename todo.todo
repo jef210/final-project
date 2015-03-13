@@ -14,11 +14,18 @@ Profile Page:
     ☐ login section, saves to db 
       ☐ create and delete accounts 
     ☐ structure
-      ☐ jquery create page section that displays on dropdown the session data 
-        ☐ per session and per date
+      ✔ bootstrap accordion create page section that displays on dropdown the session data  @done (15-03-13 15:29)
+        ☐ make it dynamically create per session
+        ☐ add date and time to title of accordion section
         ☐ includes each session in each section
-        
-    ☐ display chart per date/time and calculated score
+  ✔ Select chart library @done (15-03-13 15:28)
+  ✔ add chart to profile page @done (15-03-13 15:28)
+ ☐ create template for accordion item
+  ☐ make jade file
+  ☐ require the file in the profile-page
+  ☐ populate the db with session data
+  ☐ fetch data from db and store in a var - array of sessions
+  ☐ i over array and for each session append the template to the DOM & inject the vars into the template from the session record
     ☐ display standard deviation chart
     ☐ display entry and exit mood
     ☐ display heat map of session
@@ -48,7 +55,14 @@ General build stuff:
     ☐ make it so it starts the pad track on 1st click of 1st pad
     ☐ make it so when user clicks on another it stops the 1st sound and plays the 2nd
 
-  ☐ 
+Setting up Mongo:
+ ☐ create a model file in models
+ ☐ add a mongoose schema to that file
+ ☐ schema needs to match up with whats console logged object with info about start, notes, end
+ ☐ create mongoose model
+ ☐ in exit session require the model
+ ☐ create an instance of the model out of what is logged
+ ☐ save the new instance
 
 Functionality:
   ☐ routing to pages
@@ -273,6 +287,18 @@ tasks to accomplish to get the Db connected
 I need a Schema?
 tasks to accompish the connection to the db
 steps and tasks to take this end to end
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
