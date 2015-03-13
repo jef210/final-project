@@ -233,6 +233,22 @@ steps to accomplish adding external things like charts, maps, or audio apis to p
 how do i append it to the page (jade is still weird for me)
 when I write my function to plot my graph how to get it to and from the DB
 
+got to npmjs
+look at docs 
+npm install
+read docs
+
+customize charts
+make ajax request to get data
+set up chart in accordion
+set dummy data
+
+
+
+set up route > ajax request > 
+
+
+
 
 profile page
 append the session data with the graph to the DOM upon session completion
@@ -246,7 +262,8 @@ should I handle the start of recording voice by making it so
 
 passport
 how do i 
-create different user types ( admin & personal)
+create d
+ifferent user types ( admin & personal)
 how to add different features for each user type
 how does that all work - high level understanding
 
