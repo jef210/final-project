@@ -26,7 +26,7 @@ var passportConfig = require('./config/passport');
 // Pull in our two controllers...
 var indexController = require('./controllers/index');
 var authenticationController = require('./controllers/authentication');
-
+var apiController = require('./controllers/api')
 
 // Connect to the database
 mongoose.connect('mongodb://localhost/emotetron9000');

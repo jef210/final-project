@@ -124,10 +124,10 @@ block content
           .mood-chooser-entry-click-box
             h3#choose-mood Where are your thoughts right now?
             form.form-inline(action="/start-session" method="post")
-              input#start-mood(type="text" name="start-mood")
+              input#start-mood(type="text" name="entryMood")
               .col-md-10
                 .form-group.form-goal
-                  input#goal-input.form-control(type='text', name="start-thoughts", placeholder='Enter your thoughts here...')
+                  input#goal-input.form-control(type='text', name="entryThoughts", placeholder='Enter your thoughts here...')
               .col-md-2
                 button#goal-submit.btn.btn-default.btn-block(type='submit') Start Session
          

@@ -8,7 +8,7 @@ var apiController = {
     // 1.5. Do any validation here
 
     // 2. Create a new Beer instance from the data
-    var session = new session(newsession);
+    var session = new session(newSession);
 
     // 3. Save the new instance
     session.save(function(err, savedSession){

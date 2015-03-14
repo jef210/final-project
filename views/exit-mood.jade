@@ -124,10 +124,10 @@ block content
           .mood-chooser-entry-click-box
             h3#choose-mood Where are your thoughts right now?
             form.form-inline(action="/exit-session" method="post")
-              input#exit-mood(type="text" name="exit-mood")
+              input#exit-mood(type="text" name="exitMood")
               .col-xs-10
                 .form-group.form-goal
-                  input#goal-input.form-control(type='text', name="exit-thoughts", placeholder='Enter your thoughts here...')
+                  input#goal-input.form-control(type='text', name="exitThoughts", placeholder='Enter your thoughts here...')
               .row
               .col-md-2
                 button#goal-submit.btn.btn-default.btn-block(href="/profile-page" type='submit') Profile Page

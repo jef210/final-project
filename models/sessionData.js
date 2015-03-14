@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var session = mongoose.Schema({
+var Session = mongoose.Schema({
   userName: String,
   UUID: String,
   userType: String,
@@ -10,9 +10,10 @@ var session = mongoose.Schema({
   track: {},
   exitMood: String,
   exitThoughts: String,
-  moodShift: String
+  moodShift: String,
+  clickLocations: []
 });
 
-var SessionData = mongoose.model('Session', session);
+var SessionData = mongoose.model('Session', Session);
 
 module.exports = SessionData;

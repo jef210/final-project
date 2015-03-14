@@ -31,6 +31,16 @@ Profile Page:
     ☐ display heat map of session
     ☐ ability to add notes to session
 
+
+ add redirect into save callback to go to profile
+ - in index cotroller
+ once redirected to profile 
+ profile should ask db for all sessions
+ profile should render jade and show list of all sessions
+inside each session hook data up to playback and graph
+
+
+
 Landing Page:
     ☐ Tutorial
     ☐ what it means
@@ -58,9 +68,9 @@ General build stuff:
 Setting up Mongo:
  ✔ create a model file in models @done (15-03-13 16:06)
  ✔ add a mongoose schema to that file @done (15-03-13 16:06)
- ☐ schema needs to match up with whats console logged object with info about start, notes, end
- ☐ create mongoose model
- ☐ in exit session require the model
+ ☐ schema needs to match up with whats console logged object with info 
+ ✔ create mongoose model @done (15-03-13 17:30)
+ ✔ in exit session require the model @done (15-03-13 17:38)
  ☐ create an instance of the model out of what is logged
  ☐ save the new instance
 
