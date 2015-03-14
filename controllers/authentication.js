@@ -90,9 +90,10 @@ var authenticationController = {
     // It is safer to send as post, however, because the actual data won't
     // show up in browser history.
     var user = new User({
-      username: req.param('username'),
-      password: req.param('password'),
-      email: req.param('email')
+      username: req.body('username'),
+      password: req.body('password'),
+      email: req.body('email'),
+      userType: req.body('userType')
     });
 
     // Now that the user is created, we'll attempt to save them to the
@@ -119,9 +120,10 @@ var authenticationController = {
         req.flash('error', errorMessage);
         return res.redirect('/auth/login');
       }
-
-      // If we make it this far, we are ready to log the user in.
-      performLogin(req, res, next, user);
+      else {
+        // If we make it this far, we are ready to log the user in.
+        performLogin(req, res, next, user); 
+      }
     });
   },
 

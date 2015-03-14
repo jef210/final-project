@@ -1,73 +1,18 @@
 extends layout
 
 block content
-  .main-container
-    .home-container
-      .header
-        nav.navbar.navbar-default.color
-             .container-fluid
-               // Brand and toggle get grouped for better mobile display
-               .navbar-header
-                 button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-                   span.sr-only Toggle navigation
-                   span.icon-bar
-                   span.icon-bar
-                   span.icon-bar   
-                 a.navbar-brand#header-title(href='/') Emotetron9000
-               // Collect the nav links, forms, and other content for toggling
-               #bs-example-navbar-collapse-1.collapse.navbar-collapse
-                 ul.nav.navbar-nav.navbar-right
-                  li
-                    a(href='/about') About
-                     span.sr-only (current)
-                  li
-                    a(href='/session') Session
-                     span.sr-only (current)
-                  li
-                    a(href='/profile-page') Profile
-                     span.sr-only (current)
-                  li
-                    a(href="#", data-toggle='modal', data-target='#myModal')
-                      | Sign In  
-        
-          #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-            .modal-dialog
-              .modal-content
-                .modal-header
-                  button.close(type='button', data-dismiss='modal', aria-label='Close')
-                    span(aria-hidden='true') ×
-                  h4#myModalLabel.modal-title Sign In
-                .modal-body
-                h2 Create Your Account
-                  input#goal-input.form-control(type='text', name="first-name", placeholder='First')
-                  input#goal-input.form-control(type='text', name="last-name", placeholder='Last') 
-                  input#goal-input.form-control(type='text', name="user-name", placeholder='User Name')
-                  input#goal-input.form-control(type='email', name="email", placeholder='Email')
-                  button.btn.btn-primary(type='button') Personal
-                  button.btn.btn-primary(type='button') Administrator
-                  button.btn.btn-primary(type='button') Submit
-                  h2 Sign In
-                  input#goal-input.form-control(type='text', name="user-name", placeholder='User Name')
-                  input#goal-input.form-control(type='email', name="email", placeholder='Email')
-                  button.btn.btn-primary(type='button') Sign in 
-                  h2 Google+
-                  button.btn.btn-primary(type='button') Sign in with Google+
-                  h2 FaceBook
-                  button.btn.btn-primary(type='button') Sign in with FaceBook
-                .modal-footer
-                  button.btn.btn-default(type='button', data-dismiss='modal') Close
-                  button.btn.btn-primary(type='button') Submit
-      .instrument-session-settings.row
-      .row
-        .col-xs-4.align-instrument-icons
-          img(src='./images/mic.svg')
-        .col-xs-4.align-instrument-icons
-          img(src='./images/radio-checked.svg')
-        .col-xs-4.align-instrument-icons
-          img(src='./images/settings.svg')
-      .instrument-container.row
-      .row
-        .col-md-10.col-md-offset-1
-          button.btn.btn-primary.btn-lg.btn-block#finish-instrument(type='button') Finish 
+      
+  .instrument-session-settings.row
+  .row
+    .col-xs-4.align-instrument-icons
+      img(src='./images/mic.svg')
+    .col-xs-4.align-instrument-icons
+      img(src='./images/radio-checked.svg')
+    .col-xs-4.align-instrument-icons
+      img(src='./images/settings.svg')
+  .instrument-container.row
+  .row
+    .col-md-10.col-md-offset-1
+      button.btn.btn-primary.btn-lg.btn-block#finish-instrument(type='button') Finish 
 
 

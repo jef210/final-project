@@ -1,64 +1,8 @@
 extends layout
 
 block content
-  .main-container
-    .home-container
-      .header
-        nav.navbar.navbar-default.color
-             .container-fluid
-               // Brand and toggle get grouped for better mobile display
-               .navbar-header
-                 button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-                   span.sr-only Toggle navigation
-                   span.icon-bar
-                   span.icon-bar
-                   span.icon-bar   
-                 a.navbar-brand#header-title(href='/') Emotetron9000
-               // Collect the nav links, forms, and other content for toggling
-               #bs-example-navbar-collapse-1.collapse.navbar-collapse
-                 ul.nav.navbar-nav.navbar-right
-                  li
-                    a(href='#') About
-                     span.sr-only (current)
-                  li
-                    a(href='/entry-mood') Session
-                     span.sr-only (current)
-                  li
-                    a(href='/profile-page') Profile
-                     span.sr-only (current)
-                  li
-                    a(href="#", data-toggle='modal', data-target='#myModal')
-                      | Sign In  
-        
-          #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-            .modal-dialog
-              .modal-content
-                .modal-header
-                  button.close(type='button', data-dismiss='modal', aria-label='Close')
-                    span(aria-hidden='true') ×
-                  h4#myModalLabel.modal-title Sign In
-                .modal-body
-                 h2 Create Your Account
-                  input#goal-input.form-control(type='text', name="first-name", placeholder='First')
-                  input#goal-input.form-control(type='text', name="last-name", placeholder='Last') 
-                  input#goal-input.form-control(type='text', name="user-name", placeholder='User Name')
-                  input#goal-input.form-control(type='email', name="email", placeholder='Email')
-                  button.btn.btn-primary(type='button') Personal
-                  button.btn.btn-primary(type='button') Administrator
-                  button.btn.btn-primary(type='button') Submit
-                  h2 Sign In
-                  input#goal-input.form-control(type='text', name="user-name", placeholder='User Name')
-                  input#goal-input.form-control(type='email', name="email", placeholder='Email')
-                  button.btn.btn-primary(type='button') Sign in 
-                  h2 Google+
-                  button.btn.btn-primary(type='button') Sign in with Google+
-                  h2 FaceBook
-                  button.btn.btn-primary(type='button') Sign in with FaceBook
-                .modal-footer
-                  button.btn.btn-default(type='button', data-dismiss='modal') Close
-                  button.btn.btn-primary(type='button') Submit
-        .body-section
-        h3 What it's all about
-        p Tracking your mood at any given point in time can be difficult. Along with being able to track your mood it's nice to be able to abstract your mood and relate it something else that help you grow interpersonally. Moodeveator helps you do exactly this. By tracking your mood, then taking you to an intuitive digital instrument that 
-        h3 How it Works
-        p Frequency, pitch and duration of certain aural tones can have a dramatic effect on an individual’s mood and patterns of thought. This application provides the user with a basic instrument that uses buttons to capture tones that make up patterns of musical notes known as a Greek mode. The Greek modes have long been affiliated with human moods.The chilling suspenseful music building to a frightening scene in a horror movie may be best captured by orchestral instruments playing within the Phyrgian mode. If a human’s mood can be profoundly affected by the musical tones of a certain Greek mode, one can conclude that a human’s mood will shift with a changing musical tone (this is called the iso-principle in music therapy). This application is designed to provide the user with direct feedback of Greek modal tones and how the user’s interaction with said tones informs their current mood. The user could begin using the application feeling very depressed. As they begin to interact with the instrument they could experience a shift in mood while exploring some of the tones that are affiliated with more positive moods. Thus, the user’s mood is subtly shifted over the course of their experience. The user could also play tones that reflect their current mood. After concluding their session using the instrument the application could offer data regarding the individual’s current mood based on the tones they gravitated towards. 
+  .body-section
+  h3 What it's all about
+  p Tracking your mood at any given point in time can be difficult. Along with being able to track your mood it's nice to be able to abstract your mood and relate it something else that help you grow interpersonally. Moodeveator helps you do exactly this. By tracking your mood, then taking you to an intuitive digital instrument that 
+  h3 How it Works
+  p Frequency, pitch and duration of certain aural tones can have a dramatic effect on an individual’s mood and patterns of thought. This application provides the user with a basic instrument that uses buttons to capture tones that make up patterns of musical notes known as a Greek mode. The Greek modes have long been affiliated with human moods.The chilling suspenseful music building to a frightening scene in a horror movie may be best captured by orchestral instruments playing within the Phyrgian mode. If a human’s mood can be profoundly affected by the musical tones of a certain Greek mode, one can conclude that a human’s mood will shift with a changing musical tone (this is called the iso-principle in music therapy). This application is designed to provide the user with direct feedback of Greek modal tones and how the user’s interaction with said tones informs their current mood. The user could begin using the application feeling very depressed. As they begin to interact with the instrument they could experience a shift in mood while exploring some of the tones that are affiliated with more positive moods. Thus, the user’s mood is subtly shifted over the course of their experience. The user could also play tones that reflect their current mood. After concluding their session using the instrument the application could offer data regarding the individual’s current mood based on the tones they gravitated towards. 

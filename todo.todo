@@ -20,9 +20,9 @@ Profile Page:
         ☐ includes each session in each section
   ✔ Select chart library @done (15-03-13 15:28)
   ✔ add chart to profile page @done (15-03-13 15:28)
- ☐ create template for accordion item
-  ☐ make jade file
-  ☐ require the file in the profile-page
+ ✔ create template for accordion item @done (15-03-14 09:58)
+  ✔ make jade file @done (15-03-14 09:58)
+  ✔ require the file in the profile-page @done (15-03-14 09:58)
   ☐ populate the db with session data
   ☐ fetch data from db and store in a var - array of sessions
   ☐ i over array and for each session append the template to the DOM & inject the vars into the template from the session record
@@ -32,12 +32,12 @@ Profile Page:
     ☐ ability to add notes to session
 
 
- add redirect into save callback to go to profile
+ ☐ add redirect into save callback to go to profile
  - in index cotroller
- once redirected to profile 
- profile should ask db for all sessions
- profile should render jade and show list of all sessions
-inside each session hook data up to playback and graph
+ ☐ once redirected to profile 
+ ☐ profile should ask db for all sessions
+ ☐ profile should render jade and show list of all sessions
+ ☐ inside each session hook data up to playback and graph
 
 
 
@@ -53,9 +53,46 @@ Landing Page:
       ☐ sign in
       ☐ profile
       ☐ start session
-      ☐ 
+      ☐
+  
+
+  Passport:
+     ☐ submit event on the sign up form
+       main.js
+     ☐ ajax post to my signup route
+     ☐ show an error or success message
+   .form-response - add text, show
+
+     $(form).on('submit', function(e){
+       e.preventDefault()
+       ajaxpost......
+       .success(function(returnData){
+         if(returnData.error){
+           $(form-response).text 'whoops!'
+         } else {
+          $(form-response).text 'success!'
+         }
+       })
+     })
+
+if error
+  res.send({
+    error: 'some error message'
+})
+
+else
+  res.send({
+    data: someData  
+ })
+
+ ☐ make sure submit event is firing
+ ☐ ajax post - make sure I see the data coming through on the server
+ console req.body signup method in authenication controller initiates the res.send which brings me back to the front end ( becomes returnData in success call)
+ ☐ console.log it within the route handler of the authenciate controller
+ ☐ save - error sesnd an error back to client else send success
 
 
+tutorials on ajax posts in js
 
 General build stuff:
   ✔ migrate to node, express & jade @done (15-03-10 18:00)

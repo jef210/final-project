@@ -22,7 +22,15 @@ var userSchema = mongoose.Schema({
   password: {
     type: String,
     required: true
-  }
+  },
+  userType: {
+    type: String,
+    required: true,
+    default: 'personal'
+  },
+  userSession: [
+    {type: mongoose.Schema.ObjectId, ref : 'Session'}
+  ] 
 });
 
 /**

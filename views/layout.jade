@@ -6,18 +6,73 @@ html(lang='en')
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
     link(rel="stylesheet", type="text/css", href="main.css") 
     link(href="http://fonts.googleapis.com/css?family=Dorsa" rel='stylesheet' type='text/css')
-  
-  block content
+  body
+    .main-container
+      .home-container
+        .header
+          nav.navbar.navbar-default.color
+               .container-fluid
+                 // Brand and toggle get grouped for better mobile display
+                 .navbar-header
+                   button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                     span.sr-only Toggle navigation
+                     span.icon-bar
+                     span.icon-bar
+                     span.icon-bar   
+                   a.navbar-brand#header-title(href='/') Emotetron9000
+                 // Collect the nav links, forms, and other content for toggling
+                 #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                   ul.nav.navbar-nav.navbar-right
+                    li
+                      a(href='/about') About
+                       span.sr-only (current)
+                    li
+                      a(href='/session') Session
+                       span.sr-only (current)
+                    li
+                      a(href='/profile-page') Profile
+                       span.sr-only (current)
+                    li
+                      a(href="#", data-toggle='modal', data-target='#myModal')
+                        | Sign In  
+          
+            #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                      span(aria-hidden='true') ×
+                    h4#myModalLabel.modal-title Sign In
+                  .modal-body
+                  h2 Create Your Account
+                    input#goal-input.form-control(type='text', name="username", placeholder='User Name')
+                    input#goal-input.form-control(type='password', name="password", placeholder='Password')
+                    input#goal-input.form-control(type='email', name="email", placeholder='Email')
+                    label(for="personal-radio") Personal
+                    input#personal-radio(type='radio', name="userType", value="personal", checked) 
+                    label(for="admin-radio") Administrative
+                    input#admin-radio(type='radio', name="userType", value="admin")
+                    button.btn.btn-primary(type='button') Submit
+                    h2 Sign In
+                    input#goal-input.form-control(type='text', name="user-name", placeholder='User Name')
+                    input#goal-input.form-control(type='email', name="email", placeholder='Email')
+                    button.btn.btn-primary(type='button') Sign in 
+                    h2 Google+
+                    button.btn.btn-primary(type='button') Sign in with Google+
+                    h2 FaceBook
+                    button.btn.btn-primary(type='button') Sign in with FaceBook
+                  .modal-footer
+                    button.btn.btn-default(type='button', data-dismiss='modal') Close
+                    button.btn.btn-primary(type='button') Submit
+          block content
 
-
-
-  script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
-  script(src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js')
-  script(src='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js')
-  script(src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/js/material.min.js")
-  script(src="http://code.highcharts.com/highcharts.js")
-  script(type='text/javascript', src='http://cdnjs.cloudflare.com/ajax/libs/howler/1.1.25/howler.min.js')
-  script(src='highCharts.js')
-  script(src='main.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js')
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/js/material.min.js")
+    script(src="http://code.highcharts.com/highcharts.js")
+    script(type='text/javascript', src='http://cdnjs.cloudflare.com/ajax/libs/howler/1.1.25/howler.min.js')
+    script(src='highCharts.js')
+    script(src='main.js')
 //- https://github.com/FezVrasta/bootstrap-material-design/blob/master/package.json
 //- do I need to add package json
