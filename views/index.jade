@@ -1,82 +1,26 @@
 extends layout
 
 block content
-  .main-container
-    .home-container
-      .header
-        nav.navbar.navbar-default.color
-             .container-fluid
-               // Brand and toggle get grouped for better mobile display
-               .navbar-header
-                 button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-                   span.sr-only Toggle navigation
-                   span.icon-bar
-                   span.icon-bar
-                   span.icon-bar   
-                 a.navbar-brand#header-title(href='/') Emotetron9000
-               // Collect the nav links, forms, and other content for toggling
-               #bs-example-navbar-collapse-1.collapse.navbar-collapse
-                 ul.nav.navbar-nav.navbar-right
-                  li
-                    a(href='/about') About
-                     span.sr-only (current)
-                  li
-                    a(href='/entry-mood') Session
-                     span.sr-only (current)
-                  li
-                    a(href='/profile-page') Profile
-                     span.sr-only (current)
-                  li
-                    a(href="#", data-toggle='modal', data-target='#myModal')
-                      | Sign In  
-        
-          #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-            .modal-dialog
-              .modal-content
-                .modal-header
-                  button.close(type='button', data-dismiss='modal', aria-label='Close')
-                    span(aria-hidden='true') ×
-                  h4#myModalLabel.modal-title Sign In
-                .modal-body
-                  h2 Create Your Account
-                  input#goal-input.form-control(type='text', name="first-name", placeholder='First')
-                  input#goal-input.form-control(type='text', name="last-name", placeholder='Last') 
-                  input#goal-input.form-control(type='text', name="user-name", placeholder='User Name')
-                  input#goal-input.form-control(type='email', name="email", placeholder='Email')
-                  button.btn.btn-primary(type='button') Personal
-                  button.btn.btn-primary(type='button') Administrator
-                  button.btn.btn-primary(type='button') Submit
-                  h2 Sign In
-                  input#goal-input.form-control(type='text', name="user-name", placeholder='User Name')
-                  input#goal-input.form-control(type='email', name="email", placeholder='Email')
-                  button.btn.btn-primary(type='button') Sign in 
-                  h2 Google+
-                  button.btn.btn-primary(type='button') Sign in with Google+
-                  h2 FaceBook
-                  button.btn.btn-primary(type='button') Sign in with FaceBook
-                .modal-footer
-                  button.btn.btn-default(type='button', data-dismiss='modal') Close
-                  button.btn.btn-primary(type='button') Submit
-      .body-section
-        h3 Here's how you use it
-        p Sign In
-        p Enter your mood
-        p Interact with the digital instrument
-        p Enter you mood when you finish your interaction with the instrument
-        p Track your session Information over time
-        h3 Features
-        p Interactive Digital Instrument
-        p Display your information from each session
-        p See changes that occur over time
-        p Listen back to the track you modal-header
-        p Track your interaction with the instrument 
-        p Use the tools to blossom into the amazing you are
-        p Help yourself realize where you could use improvement with yourself 
-        h3 Who it's for
-        p People who are interested in personal growth
-        p Counselors and Therapists looking for tools to help their clients grow
-        h3 Testimonials
-        p here's all the people that love using it
+  .body-section
+    h3 Here's how you use it
+    p Sign In
+    p Enter your mood
+    p Interact with the digital instrument
+    p Enter you mood when you finish your interaction with the instrument
+    p Track your session Information over time
+    h3 Features
+    p Interactive Digital Instrument
+    p Display your information from each session
+    p See changes that occur over time
+    p Listen back to the track you modal-header
+    p Track your interaction with the instrument 
+    p Use the tools to blossom into the amazing you are
+    p Help yourself realize where you could use improvement with yourself 
+    h3 Who it's for
+    p People who are interested in personal growth
+    p Counselors and Therapists looking for tools to help their clients grow
+    h3 Testimonials
+    p here's all the people that love using it
 
 
 

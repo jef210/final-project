@@ -63,6 +63,7 @@ app.post('/start-session', indexController.startSession)
 app.post('/exit-session', indexController.exitSession)
 app.post('/instrument/save', indexController.saveInstrument);
 
+
 // Our get request for viewing the login page
 app.get('/auth/login', authenticationController.login);
 

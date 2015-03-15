@@ -23,7 +23,7 @@ var performLogin = function(req, res, next, user){
     if(err) return next(err);
 
     // Otherwise, send the user to the homepage.
-    return res.redirect('/');
+    return res.send('great job!');
   });
 };
 
@@ -49,6 +49,13 @@ var authenticationController = {
   // This is the post handler for any incoming login attempts.
   // Passing "next" allows us to easily handle any errors that may occur.
   processLogin: function(req, res, next){
+     
+     console.log('form data: ' + req.body);
+
+     var username = req.body.userName;
+     var password = req.body.passWord;
+
+console.log(username + ' ' + password);
 
     // Passport's "authenticate" method returns a method, so we store it
     // in a variable and call it with the proper arguments afterwards.
@@ -65,7 +72,7 @@ var authenticationController = {
       // to that handler.
       if(!user) {
         req.flash('error', 'Error logging in. Please try again.');
-        return res.redirect('/auth/login');
+        return res.send('Something was wrong with that. Try again!');
       }
       
       // If we make it this far, the user has correctly authenticated with passport

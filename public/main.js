@@ -344,5 +344,40 @@ $('.exit-mood-select').on('click', 'li', function () {
   // this is the element we clikced on, $ wraps in jQuery so we can find it's children. then we get all the children of the li ( in this case it's the anchor tag). we get the text of the a tag. called chaining. method is function on an object.
   var exitMood = $(this).children().text();
   $('#exit-mood').val(exitMood);
-})
+});
+
+// LOGIN SUBMIT
+
+$(document).on('submit', '#signInForm', function(e){
+
+  console.log('submit was pressed');
+
+  e.preventDefault();
+
+  var loginData = {
+    userName: $('#userNameSignInForm').val(),
+    password: $('#passwordSignInForm').val()
+  };
+  
+  console.log(loginData);
+
+ $.post('/auth/login', function(loginData) {
+
+ });
+
+});
+
+
+  // .success(function(returnData){
+  //      if(returnData.error){
+  //        console.log('error');
+  //        // $(form-response).text('whoops!');
+  //      } else {
+  //        console.log('success');
+  //       // $(form-response).text('success!');
+  //      }
+  // });
+
+
+
 
