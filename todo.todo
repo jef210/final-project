@@ -346,7 +346,22 @@ console.log should show starting and the note name and stopping the note name
 once we have this we create howl instances for each note and play and stop go in place of the console logs
 
 clicks to the graph:
-  ☐ 
+  ☐ track click events on instrument page
+  ☐ upload them with track data
+  ☐ store in session (like track)
+  ☐ on session exit, store in DB
+  ☐ on profile page, use DB click data to render the graph
+
+? why isn't graph dummy data populating to all of my sessions?
+
+Serverside graphing:
+  given a variable in JADE: 
+    script. 
+      var clientData = !{
+      JSON.string: fy(jadevar)
+      };
+      in client js: 
+        clientData is in global scope
 
 
 
