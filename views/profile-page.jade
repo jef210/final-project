@@ -4,57 +4,35 @@ block content
   .body-section
     .row
       .col-xs-12
-        h2 Hello #{username}
+        h2 Hello #{user.username}
         .goals-mood-most-recent
-          h3 Sessions #{timeStamp}
+          h3 Sessions 
           #accordion.panel-group(role="tablist", aria-multiselectable="true")
-            .panel.panel-default
-              #headingOne.panel-heading(role="tab")
-                h4.panel-title
-                  a(data-toggle="collapse", data-parent="#accordion", href="#collapseOne", aria-expanded="true", aria-controls="collapseOne")
-                    | Session 1
-              #collapseOne.panel-collapse.collapse.in(role="tabpanel", aria-labelledby="headingOne")
-                .panel-body
-                  .col-lg-2
-                    ul
-                      li Date/time
-                      li stuff
-                      li stuff
-                      <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
-                  .col-lg-10
-                    #session-chart(style="width:100%; height:400px;")
-            .panel.panel-default
-              #headingTwo.panel-heading(role="tab")
-                h4.panel-title
-                  a.collapsed(data-toggle="collapse", data-parent="#accordion", href="#collapseTwo", aria-expanded="false", aria-controls="collapseTwo")
-                    | Session 2
-              #collapseTwo.panel-collapse.collapse(role="tabpanel", aria-labelledby="headingTwo")
-                .panel-body
-                  ul
-                    li Date/time
-                    li stuff
-                    li stuff
-            .panel.panel-default
-              #headingThree.panel-heading(role="tab")
-                h4.panel-title
-                  a.collapsed(data-toggle="collapse", data-parent="#accordion", href="#collapseThree", aria-expanded="false", aria-controls="collapseThree")
-                    | Session 3
-              #collapseThree.panel-collapse.collapse(role="tabpanel", aria-labelledby="headingThree")
-                .panel-body
-                  ul
-                    li Date/time
-                    li stuff
-                    li stuff
-
-
-
-
-
-
-
-
-                 
-                    
-                    
+            for session in user.userSession
+              //- h4= session.timeStamp
+              .panel.panel-default
+                #headingOne.panel-heading(role="tab")
+                  h4.panel-title
+                    a(data-toggle="collapse", data-parent="#accordion", href="#collapseOne", aria-expanded="true", aria-controls="collapseOne")
+                      -var numSessions = user.userSession.length
+                      | #{session.timeStamp}
+                #collapseOne.panel-collapse.collapse.in(role="tabpanel", aria-labelledby="headingOne")
+                  .panel-body
+                    .col-xs-12
+                      ul
+                        -var numSessions = user.userSession.length
+                        li When you started you were feeling: #{session.entryMood}
+                         -var numSessions = user.userSession.length
+                        li You were thinking about: #{session.entryThoughts}
+                         -var numSessions = user.userSession.length
+                        li After the instrument you were felling: #{session.exitMood}
+                         -var numSessions = user.userSession.length
+                        li After the instrument you were thinking about: #{session.exitThoughts}
+                         -var numSessions = user.userSession.length
+                        li Did you notice a change in your mood? #{session.moodShift}
+                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+                    .row
+                    .col-xs-12
+                      #session-chart(style="width:100%; height:400px;")                 

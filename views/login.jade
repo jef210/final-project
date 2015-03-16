@@ -4,41 +4,48 @@ html(lang='en')
     meta(charset="utf-8")
     title Emotetron9000
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
-    link(rel="stylesheet", type="text/css", href="main.css") 
+    link(rel="stylesheet", type="text/css", href="../main.css") 
     link(href="http://fonts.googleapis.com/css?family=Dorsa" rel='stylesheet' type='text/css')
   body
     .main-container
-      //- Error comes through via the context passed when calling res.render('login', {...})
-      //- You'll see this in controllers/authentication.js
-      //- If the error exists, we'll display it.
-      if error
-        h3= error
+      #splash-container
+        //- Error comes through via the context passed when calling res.render('login', {...})
+        //- You'll see this in controllers/authentication.js
+        //- If the error exists, we'll display it.
+        if error
+          h3= error
+        .col-xs-12  
+          h1
+            .splash-header Emotetron9000  
+        .row  
+        div.logo 
+        //- Form for handling existing user logins.
+        .col-xs-6
+          h1 Sign In
+          form(action="/auth/login", method="post")
+            div.form-group
+              input#userNameSignInForm.form-control(type='text', name="username", placeholder='User Name')
+            div.form-group
+              input#passwordSignInForm.form-control(type='password', name="password", placeholder='Password')
+            button.btn.btn-primary(type='submit') Sign in 
 
-      //- Form for handling existing user logins.
-      h1 Existing Users
-      form(action="/auth/login", method="post")
-        div.form-group
-          input#userNameSignInForm.form-control(type='text', name="username", placeholder='User Name')
-        div.form-group
-          input#passwordSignInForm.form-control(type='password', name="password", placeholder='Password')
-        button.btn.btn-primary(type='submit') Sign in 
-
-      //- Form for allowing new users to register.
-      h1 Register
-      form(action="/auth/signup", method="post")
-       div.form-group
-         input#userNameCreateAccount.form-control(type='text', name="username", placeholder='User Name')
-       div.form-group
-         input#passwordCreateAccount.form-control(type='password', name="password", placeholder='Password')
-       div.form-group
-         input#emailCreateAccount.form-control(type='email', name="email", placeholder='Email')
-       h4
-         label(for="personal-radio") Personal
-         | &nbsp;
-         input#personal-radio(type='radio', name="userType", value="personal", checked) 
-         br
-         label(for="admin-radio") Administrative
-         | &nbsp;
-         input#admin-radio(type='radio', name="userType", value="admin")
-         br
-         button.btn.btn-primary(type='submit') Submit
+        //- Form for allowing new users to register.
+        .col-xs-6
+          h1 Create Your Account
+          form(action="/auth/signup", method="post", autocomplete="off")
+           div.form-group
+             input#userNameCreateAccount.form-control(type='text', name="username", placeholder='User Name')
+           div.form-group
+             input#passwordCreateAccount.form-control(type='password', name="password", placeholder='Password', autocomplete="off")
+           div.form-group
+             input#emailCreateAccount.form-control(type='email', name="email", placeholder='Email', autocomplete="off")
+           h4
+             label(for="personal-radio") Personal
+             | &nbsp;
+             input#personal-radio(type='radio', name="userType", value="personal", checked) 
+             br
+             label(for="admin-radio") Administrative
+             | &nbsp;
+             input#admin-radio(type='radio', name="userType", value="admin")
+             br
+             button.btn.btn-primary(type='submit') Submit

@@ -368,15 +368,6 @@ $(document).on('submit', '#signInForm', function(e){
 });
 
 
-  // .success(function(returnData){
-  //      if(returnData.error){
-  //        console.log('error');
-  //        // $(form-response).text('whoops!');
-  //      } else {
-  //        console.log('success');
-  //       // $(form-response).text('success!');
-  //      }
-  // });
 
 
 

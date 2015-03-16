@@ -18,7 +18,9 @@ var indexController = {
     res.render('exit-mood');
   },
   profile: function(req, res) {
-    res.render('profile-page');
+    // console.log('req.user = ', req.user)
+    console.log('req.user = ', req.user.userSession)
+    res.render('profile-page', {user:req.user});
   },
   startSession: function(req, res) {
     // res.send(req.body);
@@ -27,7 +29,7 @@ var indexController = {
   },
   exitSession: function(req, res) {
     console.log(req.session);
-    var timeStamp = null;
+    var timeStamp = new Date();
     var entryMood = req.session.entryMood.entryMood;
     var entryThoughts = req.session.entryMood.entryThoughts;
 		var track = req.session.track;

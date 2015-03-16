@@ -6,7 +6,6 @@ body {
   margin: auto;
   width: 100%;
   max-width: 960px;
-
 }
 .home-container {
   text-align: left;
@@ -14,8 +13,7 @@ body {
   margin: auto;
 }
 .header {
-  display: block;
-  
+  display: block; 
 }
 .color {
   background-color: transparent;
@@ -38,8 +36,31 @@ body {
   text-decoration: none;
 }
 
+/*---------------- SPLASH PAGE ----------------------*/
 
-/*------------------------- GLOBAL STYLING -----------------------------*/
+.logo {
+  background: url('images/niftybot.jpg') no-repeat;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+}
+.form-control:hover {
+  background-color: beige;
+  color: grey;
+}
+#splash-container {
+  /*background: url('images/pastel_colorwheel.jpg') no-repeat;*/
+  background-size: cover;
+  color: grey;
+}
+.splash-header h1 {
+  text-align: center;
+  margin: auto;
+}
+
+
+/*------------------------- QUAD STYLING -----------------------------*/
 .quad-word {
   font-family: 'Dorsa', sans-serif;
   text-align: center;

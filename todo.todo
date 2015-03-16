@@ -335,11 +335,18 @@ steps and tasks to take this end to end
 
 
 
+track play back:
+  pull data from the 
+  timeEnd
+  timeStart
+  note
+  volume
+pass it down to client side js with !{}
+console.log should show starting and the note name and stopping the note name
+once we have this we create howl instances for each note and play and stop go in place of the console logs
 
-
-
-
-
+clicks to the graph:
+  ☐ 
 
 
 
