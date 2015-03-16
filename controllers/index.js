@@ -35,7 +35,22 @@ var indexController = {
     var exitThoughts = req.body.exitThoughts;
     var moodShift = null;
     var clickLocations = null;
-    var newSession = new Session({
+    // var newSession = new Session({
+    //   timeStamp: timeStamp,
+    //   entryMood: entryMood,
+    //   entryThoughts: entryThoughts,
+    //   exitMood: exitMood,
+    //   track: track,
+    //   exitMood: exitMood,
+    //   exitThoughts: exitThoughts,
+    //   moodShift: moodShift,
+    //   clickLocations: clickLocations
+    // });
+    // newSession.save(function (err, results){
+    //   res.send(results);
+    //   this is where redirect goes
+    // })
+    req.user.userSession.push({
       timeStamp: timeStamp,
       entryMood: entryMood,
       entryThoughts: entryThoughts,
@@ -45,11 +60,10 @@ var indexController = {
       exitThoughts: exitThoughts,
       moodShift: moodShift,
       clickLocations: clickLocations
-    });
-    newSession.save(function (err, results){
-      res.send(results);
-      // this is where redirect goes
     })
+    req.user.save(function (err, results){
+      res.redirect('/profile-page');
+    });
   },
 	saveInstrument: function(req, res){
 		req.session.track = req.body.notes;

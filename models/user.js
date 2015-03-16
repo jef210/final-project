@@ -29,7 +29,19 @@ var userSchema = mongoose.Schema({
     default: 'personal'
   },
   userSession: [
-    {type: mongoose.Schema.ObjectId, ref : 'Session'}
+    {
+      userName: String,
+      UUID: String,
+      userType: String,
+      timeStamp: String,
+      entryMood: String,
+      entryThoughts: String,
+      track: {},
+      exitMood: String,
+      exitThoughts: String,
+      moodShift: String,
+      clickLocations: []
+    }
   ] 
 });
 

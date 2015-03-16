@@ -23,7 +23,7 @@ var performLogin = function(req, res, next, user){
     if(err) return next(err);
 
     // Otherwise, send the user to the homepage.
-    return res.send('great job!');
+    return res.redirect('/');
   });
 };
 
@@ -97,10 +97,10 @@ console.log(username + ' ' + password);
     // It is safer to send as post, however, because the actual data won't
     // show up in browser history.
     var user = new User({
-      username: req.body('username'),
-      password: req.body('password'),
-      email: req.body('email'),
-      userType: req.body('userType')
+      username: req.body.username,
+      password: req.body.password,
+      email: req.body.email,
+      userType: req.body.userType
     });
 
     // Now that the user is created, we'll attempt to save them to the

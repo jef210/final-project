@@ -53,15 +53,7 @@ app.use(passport.initialize());
 // Hook in the passport session management into the middleware chain.
 app.use(passport.session());
 
-app.get('/', indexController.index);
-app.get('/entry-mood', indexController.moodEntry);
-app.get('/instrument', indexController.instrument);
-app.get('/exit-mood', indexController.moodExit);
-app.get('/profile-page', indexController.profile);
-app.get('/about', indexController.about);
-app.post('/start-session', indexController.startSession)
-app.post('/exit-session', indexController.exitSession)
-app.post('/instrument/save', indexController.saveInstrument);
+
 
 
 // Our get request for viewing the login page
@@ -85,6 +77,14 @@ app.use(passportConfig.ensureAuthenticated);
 // Because this route occurs after the ensureAuthenticated middleware, it will require
 // authentication before access is allowed.
 app.get('/', indexController.index);
+app.get('/entry-mood', indexController.moodEntry);
+app.get('/instrument', indexController.instrument);
+app.get('/exit-mood', indexController.moodExit);
+app.get('/profile-page', indexController.profile);
+app.get('/about', indexController.about);
+app.post('/start-session', indexController.startSession)
+app.post('/exit-session', indexController.exitSession)
+app.post('/instrument/save', indexController.saveInstrument);
 
 
 // Start our server!

@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
 
 var Session = mongoose.Schema({
-  userName: String,
+userName: String,
   UUID: String,
   userType: String,
-  timeStamp: String,
+  timeStamp:   String,
   entryMood: String,
   entryThoughts: String,
   track: {},

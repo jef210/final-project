@@ -27,7 +27,7 @@ html(lang='en')
                       a(href='/about') About
                        span.sr-only (current)
                     li
-                      a(href='/session') Session
+                      a(href='/entry-mood') Session
                        span.sr-only (current)
                     li
                       a(href='/profile-page') Profile
@@ -47,11 +47,11 @@ html(lang='en')
                   h2 Create Your Account!
                   form(id='createForm' onsubmit="return false;")
                     div.form-group
-                      input.form-control(type='text', name="username", placeholder='User Name')
+                      input#userNameCreateAccount.form-control(type='text', name="username", placeholder='User Name')
                     div.form-group
-                      input.form-control(type='password', name="password", placeholder='Password')
+                      input#passwordCreateAccount.form-control(type='password', name="password", placeholder='Password')
                     div.form-group
-                      input.form-control(type='email', name="email", placeholder='Email')
+                      input#emailCreateAccount.form-control(type='email', name="email", placeholder='Email')
                     h4
                       label(for="personal-radio") Personal
                       | &nbsp;
@@ -69,12 +69,12 @@ html(lang='en')
                     div.form-group
                       input#passwordSignInForm.form-control(type='password', name="pasword", placeholder='Password')
                     button.btn.btn-primary(type='submit') Sign in 
-                  form(id="signinGoogle+") 
-                    h2 Google+
-                    button.btn.btn-primary(type='button') Sign in with Google+
-                  form(id="signinFaceBook")
-                    h2 FaceBook
-                    button.btn.btn-primary(type='button') Sign in with FaceBook
+                  //- form(id="signinGoogle+") 
+                  //-   h2 Google+
+                  //-   button.btn.btn-primary(type='button') Sign in with Google+
+                  //- form(id="signinFaceBook")
+                  //-   h2 FaceBook
+                  //-   button.btn.btn-primary(type='button') Sign in with FaceBook
                   .modal-footer
                     button.btn.btn-default(type='button', data-dismiss='modal') Close
                     button.btn.btn-primary(type='button') Submit

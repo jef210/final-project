@@ -11,7 +11,7 @@ Display:
     ✔ change colors of mood selection boxes @done (15-03-10 19:43)
     ☐ use jquery click location effect on spot where user clicks
 Profile Page:
-    ☐ login section, saves to db 
+    ✔ login section, saves to db  @done (15-03-16 09:11)
       ☐ create and delete accounts 
     ☐ structure
       ✔ bootstrap accordion create page section that displays on dropdown the session data  @done (15-03-13 15:29)
@@ -57,9 +57,9 @@ Landing Page:
   
 
   Passport:
-     ☐ submit event on the sign up form
+     ✔ submit event on the sign up form @done (15-03-16 09:11)
        main.js
-     ☐ ajax post to my signup route
+     ✔ ajax post to my signup route @done (15-03-16 09:12)
      ☐ show an error or success message
    .form-response - add text, show
 
@@ -85,10 +85,10 @@ else
     data: someData  
  })
 
- ☐ make sure submit event is firing
- ☐ ajax post - make sure I see the data coming through on the server
+ ✔ make sure submit event is firing @done (15-03-16 09:11)
+ ✔ ajax post - make sure I see the data coming through on the server @done (15-03-16 11:26)
  console req.body signup method in authenication controller initiates the res.send which brings me back to the front end ( becomes returnData in success call)
- ☐ console.log it within the route handler of the authenciate controller
+ ✔ console.log it within the route handler of the authenciate controller @done (15-03-16 11:26)
  ☐ save - error sesnd an error back to client else send success
 
 
@@ -97,7 +97,7 @@ tutorials on ajax posts in js
 General build stuff:
   ✔ migrate to node, express & jade @done (15-03-10 18:00)
   ✔ hide/show parts of the page or create multi pages  @done (15-03-10 18:00)
-  ☐ structure MVC
+  ✔ structure MVC @done (15-03-16 09:12)
   ☐ get ready for Phonegap/Cordova
     ☐ make it so it starts the pad track on 1st click of 1st pad
     ☐ make it so when user clicks on another it stops the 1st sound and plays the 2nd
@@ -105,7 +105,7 @@ General build stuff:
 Setting up Mongo:
  ✔ create a model file in models @done (15-03-13 16:06)
  ✔ add a mongoose schema to that file @done (15-03-13 16:06)
- ☐ schema needs to match up with whats console logged object with info 
+ ✔ schema needs to match up with whats console logged object with info  @done (15-03-16 09:12)
  ✔ create mongoose model @done (15-03-13 17:30)
  ✔ in exit session require the model @done (15-03-13 17:38)
  ☐ create an instance of the model out of what is logged
@@ -167,18 +167,14 @@ http://derickbailey.com/2014/09/21/calculating-standard-deviation-with-array-map
 
 User authentication: 
   - passportjs
-    ☐ 3 types of users  
-      ☐ personal I, personal II, administrator
+    ☐ 2 types of users  
+      ☐ personal, administrator
       ☐ rules to define each user type
       ☐ features for each user type
         ☐ personal I  
-          ☐ ability to use the instrument and save 3 sessions
-          ☐ sessions auto delete once user creates 4 four sessions
-          ☐ no ability to share or save
-        ☐ personal II
-          ☐ ability to save unlimited sessions (archive system maybe)
-          ☐ ability to share on fb
-          ☐ ability to add notes to sessions
+          ✔ unlimited sessions @done (15-03-16 11:27)
+          ✔ ability to save session @done (15-03-16 11:28)
+          ☐ ability to share session
         ☐ administrative
           ☐ ability to add clientbase to their profile
           ☐ ability to see all session data per user assigned to their account
