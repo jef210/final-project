@@ -376,8 +376,8 @@ $(document).on("click", function(e) {
 });
 
 var graphData = [];
-$('.session-chart').highcharts(function(){
-  this.graphs.map();
+$('.session-chart').highcharts(function(item){
+  this.graphs.map(item);
 });
 console.log(graphs);
 
