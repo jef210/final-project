@@ -40,13 +40,7 @@ body {
 /*---------------- SPLASH PAGE ----------------------*/
 
 .logo {
-  background: url('./images/emotetron9000_logo4.svg') no-repeat;
   margin: auto;
-  background-position: center;
-  background-size: 100% 100%;
-  display: block;
-  height: 275px;
-  width: 100%;
 }
 .form-control:hover {
   background-color: beige;
@@ -64,13 +58,12 @@ body {
 
 
 /*------------------------- QUAD STYLING -----------------------------*/
-.quad-word {
+/*.quad-word {
   font-family: 'Dorsa', sans-serif;
   text-align: center;
   color: #777;
   position: absolute;
-  /*font-size: 10em;*/
-}
+}*/
 
 
 /*---------------------- MOOD SELECTION SECTION ----------------------*/

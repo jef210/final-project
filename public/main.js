@@ -368,6 +368,11 @@ $(document).on('submit', '#signInForm', function(e){
 });
 
 
+$(document).on("click", function(e) {
+  var clickLocations = [];
+  $(".instrument-container").val(e.pageX, e.pageY);
+  
+});
 
 
 
