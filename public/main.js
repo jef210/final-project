@@ -375,12 +375,11 @@ $(document).on("click", function(e) {
   // console.log(clickLocations);
 });
 
-// var graphData = [];
-// $('.session-chart').highcharts(function(){
-//   this.graphs.map();
-//   })
-// })
-// console.log(graphs);
+var graphData = [];
+$('.session-chart').highcharts(function(){
+  this.graphs.map();
+});
+console.log(graphs);
 
   
     

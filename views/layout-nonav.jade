@@ -6,10 +6,12 @@ html(lang='en')
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
     link(rel="stylesheet", type="text/css", href="main.css") 
     link(href="http://fonts.googleapis.com/css?family=Dorsa" rel='stylesheet' type='text/css')
-  block content
   body
     .main-container
       .home-container
+        script.
+          var graphs = [];  
+        block content
 
     script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script(src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js')
