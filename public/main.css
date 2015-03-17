@@ -41,6 +41,10 @@ body {
 
 .logo {
   margin: auto;
+  padding: 10px;
+}
+.login-logo-align {
+  text-align: center;
 }
 .form-control:hover {
   background-color: beige;
@@ -56,6 +60,16 @@ body {
   margin: auto;
 }
 
+/*------------------------- NAV STYLES --------------------------------------*/
+.nav-logo {
+  padding: 5px;
+  text-align: left;
+  width: 400px;
+  display: block;
+}
+.navbar-brand {
+  height: auto;
+}
 
 /*------------------------- QUAD STYLING -----------------------------*/
 /*.quad-word {
