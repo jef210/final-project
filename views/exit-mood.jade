@@ -1,5 +1,5 @@
-
 extends layout-nonav
+
 block content
   .main-container
     .home-container
@@ -126,7 +126,7 @@ block content
             form.form-inline(action="/exit-session" method="post")
               input#exit-mood.form-control(type="text" name="exitMood")
               .col-xs-12
-                .form-group.form-goal
+                .form-group.form-goal.form-wide
                   input#thought-input.form-control(type='text', name="exitThoughts", placeholder='Enter your thoughts here...')
               .row
                 h3#exit-mood-shift Did you notice a shift in your mood?

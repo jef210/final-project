@@ -119,13 +119,13 @@ block content
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Heartbroken
       .row
-        .col-md-12
+        .col-xs-12
           .mood-chooser-entry-click-box
             h3#choose-mood Where are your thoughts right now?
             form.form-inline(action="/start-session" method="post")
               input#start-mood(type="text" name="entryMood")
-              .col-md-10
-                .form-group.form-goal
+              .col-xs-12
+                .form-group.form-goal.form-wide
                   input#goal-input.form-control(type='text', name="entryThoughts", placeholder='Enter your thoughts here...')
-              .col-md-2
+              .col-xs-12
                 button#goal-submit.btn.btn-primary.btn-block(type='submit') Start Instrument Session

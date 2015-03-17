@@ -138,12 +138,18 @@ body {
 /*.form-goal {
   width: 100%;
 }*/
-
+#goal-input {
+  width: 100%;
+}
 #thought-input {
   width: 100%;
 }
 .form-goal {
   margin: auto;
+}
+.form-wide {
+  display: block;
+  width: 100%;
 }
 .drop-down-style {
   left: 15px;

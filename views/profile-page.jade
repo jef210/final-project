@@ -32,9 +32,4 @@ block content
                     .col-xs-12
                       .session-chart(id="graph_#{session._id}", style="width:100%; height:400px;") 
                       script.
-                        graphs.push(['graph_#{session._id}', !{JSON.stringify(session.clickLocations)}]);                
-                    
-                         
-                        
-                        
-                        
+                        graphs.push(['graph_#{session._id}', !{JSON.stringify(session.clickLocations)}]);
