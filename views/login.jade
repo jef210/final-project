@@ -14,12 +14,12 @@ html(lang='en')
         //- If the error exists, we'll display it.
         if error
           h3= error
+          
+      .row  
         .col-xs-12  
-          h1
-            .splash-header Emotetron9000  
-        .row  
-        div.logo 
-        //- Form for handling existing user logins.
+          div.logo 
+      //- Form for handling existing user logins.
+      .row
         .col-xs-6
           h1 Sign In
           form(action="/auth/login", method="post")

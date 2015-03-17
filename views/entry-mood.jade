@@ -10,7 +10,7 @@ block content
             .dropdown.col-md-2.col-xs-4
               button#happy.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Happy
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Fulfilled
@@ -29,7 +29,7 @@ block content
             .col-md-2.col-xs-4
               button#excited.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 |Excited
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Ecstatic
@@ -46,7 +46,7 @@ block content
             .col-md-2.col-xs-4
               button#tender.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Tender
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Intimate
@@ -65,7 +65,7 @@ block content
             .col-md-2.col-xs-4
               button#scared.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Scared
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Tense
@@ -83,7 +83,7 @@ block content
             .col-md-2.col-xs-4
               button#angry.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Angry
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Irritated
@@ -102,7 +102,7 @@ block content
             .col-md-2.col-xs-4
               button#sad.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Sad
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.start-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Down
@@ -118,24 +118,14 @@ block content
                   a(role='menuitem', tabindex='-1', href='#') Depressed
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Heartbroken
-    
       .row
         .col-md-12
           .mood-chooser-entry-click-box
             h3#choose-mood Where are your thoughts right now?
             form.form-inline(action="/start-session" method="post")
               input#start-mood(type="text" name="entryMood")
-              .col-md-10
-                .form-group.form-goal
-                  input#goal-input.form-control(type='text', name="entryThoughts", placeholder='Enter your thoughts here...')
-              .col-md-2
-                button#goal-submit.btn.btn-default.btn-block(type='submit') Start Session
-         
-      //- br
-      //- .row
-      //-   .col-md-6.col-md-offset-3
-         
-      //-     .col-md-6
-      //-       button.btn.btn-primary.btn-lg.btn-block(type='button') Profile
-      //-     .col-md-6
-      //-       button.btn.btn-primary.btn-lg.btn-block(type='button') About
+            .col-md-10
+              .form-group.form-goal
+                input#goal-input.form-control(type='text', name="entryThoughts", placeholder='Enter your thoughts here...')
+            .col-md-2
+              button#goal-submit.btn.btn-primary.btn-block(href="/instrument", type='submit') Start Instrument Session

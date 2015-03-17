@@ -28,22 +28,24 @@ body {
 }
 .body-section h3 {
   color: #777;
-  font-size: 1.2em;
+  font-size: 1.6em;
   text-decoration: underline;
 }
 .body-section p {
-  font-size: .8em;
+  font-size: 1em;
   text-decoration: none;
 }
 
 /*---------------- SPLASH PAGE ----------------------*/
 
 .logo {
-  background: url('images/niftybot.jpg') no-repeat;
+  background: url('./images/emotetron9000_logo4.svg') no-repeat;
   margin: auto;
-  width: 400px;
-  height: 400px;
-  background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
+  display: block;
+  height: 275px;
+  width: 100%;
 }
 .form-control:hover {
   background-color: beige;
@@ -116,7 +118,7 @@ body {
   border-radius: 5px;
 }
 
-.goal-entry-box {
+/*.goal-entry-box {
   width: 90%;
   height: 40px;
   margin: auto;
@@ -124,17 +126,17 @@ body {
   border: 2px solid black; 
   border-radius: 5px;
   display: inline-block;
-}
-
-.form-goal {
+}*/
+/*.form-goal {
   width: 100%;
-}
+}*/
 
 #thought-input {
   width: 100%;
 }
-
-
+.form-goal {
+  margin: auto;
+}
 .drop-down-style {
   left: 15px;
   right:15px;
@@ -290,9 +292,19 @@ body {
   list-style: none;
   text-align: left;
 }
-
-
-
+.mood-shift-buttons {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+#exit-mood-shift {
+  text-align: center;
+}
+#goal-submit {
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+}
 
 
 

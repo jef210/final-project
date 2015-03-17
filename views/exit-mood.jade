@@ -10,7 +10,7 @@ block content
             .dropdown.col-md-2.col-xs-4
               button#happy.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Happy
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Fulfilled
@@ -29,7 +29,7 @@ block content
             .col-md-2.col-xs-4
               button#excited.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 |Excited
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Ecstatic
@@ -46,7 +46,7 @@ block content
             .col-md-2.col-xs-4
               button#tender.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Tender
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Intimate
@@ -65,7 +65,7 @@ block content
             .col-md-2.col-xs-4
               button#scared.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Scared
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Tense
@@ -83,7 +83,7 @@ block content
             .col-md-2.col-xs-4
               button#angry.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Angry
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Irritated
@@ -102,7 +102,7 @@ block content
             .col-md-2.col-xs-4
               button#sad.btn.btn-default.dropdown-toggle.emotion-button.btn-block(type='button', data-toggle='dropdown', aria-expanded='true')
                 | Sad
-                //- span.caret
+                span.caret
               ul.dropdown-menu.drop-down-style.exit-mood-select(role='menu', aria-labelledby='dropdownMenu1')
                 li(role='presentation')
                   a(role='menuitem', tabindex='-1', href='#') Down
@@ -120,23 +120,24 @@ block content
                   a(role='menuitem', tabindex='-1', href='#') Heartbroken
     
       .row
-        .col-md-12
+        .col-xs-12
           .mood-chooser-entry-click-box
             h3#choose-mood Where are your thoughts right now?
             form.form-inline(action="/exit-session" method="post")
-              input#exit-mood(type="text" name="exitMood")
-              .col-xs-10
-                .form-group.form-goal
-                  input#goal-input.form-control(type='text', name="exitThoughts", placeholder='Enter your thoughts here...')
-              .row
-              .col-md-2
-                button#goal-submit.btn.btn-default.btn-block(href="/profile-page" type='submit') Profile Page
-         
-      //- br
-      //- .row
-      //-   .col-md-6.col-md-offset-3
-         
-      //-     .col-md-6
-      //-       button.btn.btn-primary.btn-lg.btn-block(type='button') Profile
-      //-     .col-md-6
-      //-       button.btn.btn-primary.btn-lg.btn-block(type='button') About
+              input#exit-mood.form-control(type="text" name="exitMood")
+            .col-xs-12
+              .form-group.form-goal
+                input#thought-input.form-control(type='text', name="exitThoughts", placeholder='Enter your thoughts here...')
+            .row
+              h3#exit-mood-shift Did you notice a shift in your mood?
+            .row
+              .col-xs-6.mood-shift-buttons
+                label(for="mood-shift-radio-yes") yes
+                | &nbsp;
+                input#mood-shift-radio-yes(type='radio', name="userType", value="personal", checked) 
+              .col-xs-6.mood-shift-buttons
+                label(for="mood-shift-radio-no") no
+                | &nbsp;
+                input#mood-shift-radio-no(type='radio', name="userType", value="admin")
+              .col-xs-12
+                button#goal-submit.btn.btn-primary.btn-block(href="/profile-page" type='submit') Profile Page
