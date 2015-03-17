@@ -29,7 +29,7 @@ var authenticationController = require('./controllers/authentication');
 var apiController = require('./controllers/api')
 
 // Connect to the database
-mongoose.connect('mongodb://localhost/emotetron9000');
+mongoose.connect(process.env.MONGOLAB_URI ||'mongodb://localhost/emotetron9000');
 
 
 // Define a base express app...
