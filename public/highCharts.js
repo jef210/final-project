@@ -62,7 +62,7 @@ $(function () {
         series: [{
             name: 'Goals',
             color: 'rgba(223, 83, 83, .5)',
-            data: graphData
+            data: []
 
         }, 
         {

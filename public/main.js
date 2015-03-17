@@ -372,14 +372,14 @@ var clickLocations = [];
 
 $(document).on("click", function(e) {
   clickLocations.push({x: e.pageX, y: e.pageY});
-  // console.log(clickLocations);
+  console.log(clickLocations);
 });
 
-// var graphData = [];
-// $('.session-chart').highcharts(function(item){
-//   this.graphs.map(item);
-// });
-// console.log(graphs);
+var graphData = [];
+$('.session-chart').highcharts(function(item){
+  this.graphs.map(item);
+});
+console.log(graphs);
 
   
     
