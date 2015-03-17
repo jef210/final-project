@@ -89,6 +89,6 @@ app.post('/instrument/save', indexController.saveInstrument);
 
 // Start our server!
 var port = process.env.PORT || 5297;
-var server = app.listen(5297, function() {
+var server = app.listen(port, function() {
   console.log('Express server listening on port ' + server.address().port);
 });
