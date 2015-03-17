@@ -353,8 +353,14 @@ clicks to the graph:
   ☐ on profile page, use DB click data to render the graph
   ☐ connect variable from jade to high charts initialization
 
-? why isn't graph dummy data populating to all of my sessions?
+    map over graphs
+    consolelog the item being mapped
+    each i over graphs call highcharts on 1st element in item
+    pass highcharts data from 2nd element in item
 
+
+? why isn't graph dummy data populating to all of my sessions?
+- because I ha 1 id for all my graphs
 
 Serverside graphing:
   given a variable in JADE: 

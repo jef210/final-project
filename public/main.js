@@ -375,6 +375,14 @@ $(document).on("click", function(e) {
   console.log(clickLocations);
 });
 
-
+var graphData = [];
+$('.session-chart').highcharts(function(){
+  this.graphs.map(function (item){
+    
+  })
+})
+this.clickLocations.map( function (item){
+  
+    
 
 
