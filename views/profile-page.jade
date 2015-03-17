@@ -14,7 +14,6 @@ block content
                 #headingOne.panel-heading(role="tab")
                   h4.panel-title
                     a(data-toggle="collapse", data-parent="#accordion", href="#collapseOne", aria-expanded="true", aria-controls="collapseOne")
-                      
                       | #{session.timeStamp}
                 #collapseOne.panel-collapse.collapse.in(role="tabpanel", aria-labelledby="headingOne")
                   .panel-body
@@ -22,7 +21,7 @@ block content
                       ul
                         li When you started you were feeling: #{session.entryMood}
                         li You were thinking about: #{session.entryThoughts}
-                        li After the instrument you were felling: #{session.exitMood}
+                        li After the instrument you were feeling: #{session.exitMood}
                         li After the instrument you were thinking about: #{session.exitThoughts}
                         li Did you notice a change in your mood? #{session.moodShift}
                         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
