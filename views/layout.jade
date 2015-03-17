@@ -11,73 +11,29 @@ html(lang='en')
       .home-container
         .header
           nav.navbar.navbar-default.color
-               .container-fluid
-                 // Brand and toggle get grouped for better mobile display
-                 .navbar-header
-                   button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-                     span.sr-only Toggle navigation
-                     span.icon-bar
-                     span.icon-bar
-                     span.icon-bar   
-                   a.navbar-brand#header-title(href='/') Emotetron9000
-                 // Collect the nav links, forms, and other content for toggling
-                 #bs-example-navbar-collapse-1.collapse.navbar-collapse
-                   ul.nav.navbar-nav.navbar-right
-                    li
-                      a(href='/about') About
-                       span.sr-only (current)
-                    li
-                      a(href='/entry-mood') Session
-                       span.sr-only (current)
-                    li
-                      a(href='/profile-page') Profile
-                       span.sr-only (current)
-                    //- li
-                    //-   a(href="#", data-toggle='modal', data-target='#myModal')
-                    //-     | Sign In  
-          
-            //- #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-            //-   .modal-dialog
-            //-     .modal-content
-            //-       .modal-header
-            //-         button.close(type='button', data-dismiss='modal', aria-label='Close')
-            //-           span(aria-hidden='true') ×
-            //-         h4#myModalLabel.modal-title Sign In
-            //-       .modal-body
-            //-       h2 Create Your Account!
-            //-       form(id='createForm' onsubmit="return false;")
-            //-         div.form-group
-            //-           input#userNameCreateAccount.form-control(type='text', name="username", placeholder='User Name')
-            //-         div.form-group
-            //-           input#passwordCreateAccount.form-control(type='password', name="password", placeholder='Password')
-            //-         div.form-group
-            //-           input#emailCreateAccount.form-control(type='email', name="email", placeholder='Email')
-            //-         h4
-            //-           label(for="personal-radio") Personal
-            //-           | &nbsp;
-            //-           input#personal-radio(type='radio', name="userType", value="personal", checked) 
-            //-           br
-            //-           label(for="admin-radio") Administrative
-            //-           | &nbsp;
-            //-           input#admin-radio(type='radio', name="userType", value="admin")
-            //-           br
-            //-           button.btn.btn-primary(type='submit') Submit
-            //-       form(id='signInForm')
-            //-         h2 Sign In
-            //-         div.form-group
-            //-           input#userNameSignInForm.form-control(type='text', name="user-name", placeholder='User Name')
-            //-         div.form-group
-            //-           input#passwordSignInForm.form-control(type='password', name="pasword", placeholder='Password')
-            //-         button.btn.btn-primary(type='submit') Sign in 
-            //-       //- form(id="signinGoogle+") 
-            //-       //-   h2 Google+
-            //-       //-   button.btn.btn-primary(type='button') Sign in with Google+
-            //-       //- form(id="signinFaceBook")
-            //-       //-   h2 FaceBook
-            //-       //-   button.btn.btn-primary(type='button') Sign in with FaceBook
-            //-       .modal-footer
-            //-         button.btn.btn-default(type='button', data-dismiss='modal') Close
-            //-         button.btn.btn-primary(type='button') Submit
+           .container-fluid
+             // Brand and toggle get grouped for better mobile display
+             .navbar-header
+               button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                 span.sr-only Toggle navigation
+                 span.icon-bar
+                 span.icon-bar
+                 span.icon-bar   
+               a.navbar-brand#header-title(href='/')
+                img(src='./images/emotetron9000_logo4.svg') 
+             // Collect the nav links, forms, and other content for toggling
+             #bs-example-navbar-collapse-1.collapse.navbar-collapse
+               ul.nav.navbar-nav.navbar-right
+                li
+                  a(href='/about') About
+                   span.sr-only (current)
+                li
+                  a(href='/entry-mood') Session
+                   span.sr-only (current)
+                li
+                  a(href='/profile-page') Profile
+                   span.sr-only (current)
+            
           block content
 
     script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')

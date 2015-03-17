@@ -8,7 +8,7 @@ html(lang='en')
     link(href="http://fonts.googleapis.com/css?family=Dorsa" rel='stylesheet' type='text/css')
   body
     .main-container
-      #splash-container
+      //- #splash-container
         //- Error comes through via the context passed when calling res.render('login', {...})
         //- You'll see this in controllers/authentication.js
         //- If the error exists, we'll display it.
@@ -17,7 +17,7 @@ html(lang='en')
           
       .row  
         .col-xs-12  
-          div.logo 
+          img(src='./images/emotetron9000_logo4.svg') 
       //- Form for handling existing user logins.
       .row
         .col-xs-6
