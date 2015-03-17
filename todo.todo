@@ -346,13 +346,15 @@ console.log should show starting and the note name and stopping the note name
 once we have this we create howl instances for each note and play and stop go in place of the console logs
 
 clicks to the graph:
-  ☐ track click events on instrument page
-  ☐ upload them with track data
-  ☐ store in session (like track)
-  ☐ on session exit, store in DB
+  ✔ track click events on instrument page   @done (15-03-17 10:05)
+  ✔ upload them with track data @done (15-03-17 10:38)
+  ✔ store in session (like track) @done (15-03-17 10:38)
+  ✔ on session exit, store in DB @done (15-03-17 10:38)
   ☐ on profile page, use DB click data to render the graph
+  ☐ connect variable from jade to high charts initialization
 
 ? why isn't graph dummy data populating to all of my sessions?
+
 
 Serverside graphing:
   given a variable in JADE: 
@@ -365,7 +367,10 @@ Serverside graphing:
 
 
 
-
+Instrument functionality:
+  ☐ begins playing pad on first click
+  ☐ once clicked in a another quad pad plays that pad sound
+  ☐  
 
 
 

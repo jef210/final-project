@@ -125,19 +125,19 @@ block content
             h3#choose-mood Where are your thoughts right now?
             form.form-inline(action="/exit-session" method="post")
               input#exit-mood.form-control(type="text" name="exitMood")
-            .col-xs-12
-              .form-group.form-goal
-                input#thought-input.form-control(type='text', name="exitThoughts", placeholder='Enter your thoughts here...')
-            .row
-              h3#exit-mood-shift Did you notice a shift in your mood?
-            .row
-              .col-xs-6.mood-shift-buttons
-                label(for="mood-shift-radio-yes") yes
-                | &nbsp;
-                input#mood-shift-radio-yes(type='radio', name="userType", value="personal", checked) 
-              .col-xs-6.mood-shift-buttons
-                label(for="mood-shift-radio-no") no
-                | &nbsp;
-                input#mood-shift-radio-no(type='radio', name="userType", value="admin")
               .col-xs-12
-                button#goal-submit.btn.btn-primary.btn-block(href="/profile-page" type='submit') Profile Page
+                .form-group.form-goal
+                  input#thought-input.form-control(type='text', name="exitThoughts", placeholder='Enter your thoughts here...')
+              .row
+                h3#exit-mood-shift Did you notice a shift in your mood?
+              .row
+                .col-xs-6.mood-shift-buttons
+                  label(for="mood-shift-radio-yes") yes
+                  | &nbsp;
+                  input#mood-shift-radio-yes(type='radio', name="userType", value="personal", checked) 
+                .col-xs-6.mood-shift-buttons
+                  label(for="mood-shift-radio-no") no
+                  | &nbsp;
+                  input#mood-shift-radio-no(type='radio', name="userType", value="admin")
+                .col-xs-12
+                  button#goal-submit.btn.btn-primary.btn-block(href="/profile-page" type='submit') Profile Page

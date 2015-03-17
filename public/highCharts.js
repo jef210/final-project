@@ -1,5 +1,5 @@
 $(function () {
-    $('#session-chart').highcharts({
+    $('.session-chart').highcharts({
         chart: {
             type: 'scatter',
             zoomType: 'xy'

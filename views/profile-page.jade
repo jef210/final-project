@@ -14,25 +14,27 @@ block content
                 #headingOne.panel-heading(role="tab")
                   h4.panel-title
                     a(data-toggle="collapse", data-parent="#accordion", href="#collapseOne", aria-expanded="true", aria-controls="collapseOne")
-                      -var numSessions = user.userSession.length
+                      
                       | #{session.timeStamp}
                 #collapseOne.panel-collapse.collapse.in(role="tabpanel", aria-labelledby="headingOne")
                   .panel-body
                     .col-xs-12
                       ul
-                        -var numSessions = user.userSession.length
                         li When you started you were feeling: #{session.entryMood}
-                         -var numSessions = user.userSession.length
                         li You were thinking about: #{session.entryThoughts}
-                         -var numSessions = user.userSession.length
                         li After the instrument you were felling: #{session.exitMood}
-                         -var numSessions = user.userSession.length
                         li After the instrument you were thinking about: #{session.exitThoughts}
-                         -var numSessions = user.userSession.length
                         li Did you notice a change in your mood? #{session.moodShift}
                         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
                         <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
                         <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
                     .row
                     .col-xs-12
-                      #session-chart(style="width:100%; height:400px;")                 
+                      .session-chart(style="width:100%; height:400px;") 
+                      script.
+                        var graph_#{session._id} = !{JSON.stringify(session.clickLocations)}                
+                    
+                         
+                        
+                        
+                        

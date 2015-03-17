@@ -36,7 +36,7 @@ var indexController = {
     var exitMood = req.body.exitMood;
     var exitThoughts = req.body.exitThoughts;
     var moodShift = null;
-    var clickLocations = null;
+    var clickLocations = req.session.clickLocations;
     // var newSession = new Session({
     //   timeStamp: timeStamp,
     //   entryMood: entryMood,
@@ -69,6 +69,7 @@ var indexController = {
   },
 	saveInstrument: function(req, res){
 		req.session.track = req.body.notes;
+    req.session.clickLocations = req.body.clickLocations;
 		res.sendStatus(200);
 	}
 };

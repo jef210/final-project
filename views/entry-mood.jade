@@ -124,8 +124,8 @@ block content
             h3#choose-mood Where are your thoughts right now?
             form.form-inline(action="/start-session" method="post")
               input#start-mood(type="text" name="entryMood")
-            .col-md-10
-              .form-group.form-goal
-                input#goal-input.form-control(type='text', name="entryThoughts", placeholder='Enter your thoughts here...')
-            .col-md-2
-              button#goal-submit.btn.btn-primary.btn-block(href="/instrument", type='submit') Start Instrument Session
+              .col-md-10
+                .form-group.form-goal
+                  input#goal-input.form-control(type='text', name="entryThoughts", placeholder='Enter your thoughts here...')
+              .col-md-2
+                button#goal-submit.btn.btn-primary.btn-block(type='submit') Start Instrument Session

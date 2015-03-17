@@ -335,7 +335,7 @@ $('#finish-instrument').on('click', function(){
       volume: trackItem.note.volume
     };
   });
-  $.post('/instrument/save', {notes: notesToSend}, function(data){
+  $.post('/instrument/save', {notes: notesToSend, clickLocations: clickLocations}, function(data){
     window.location.pathname = '/exit-mood'
   });
 })
@@ -368,10 +368,11 @@ $(document).on('submit', '#signInForm', function(e){
 });
 
 
+var clickLocations = [];
+
 $(document).on("click", function(e) {
-  var clickLocations = [];
-  $(".instrument-container").val(e.pageX, e.pageY);
-  
+  clickLocations.push({x: e.pageX, y: e.pageY});
+  console.log(clickLocations);
 });
 
 

@@ -303,7 +303,7 @@ body {
 
 
 /*-------------------------- CHARTS ------------------------------------*/
-#session-chart {
+.session-chart {
   display: inline-block;
   max-width: 100%;
   max-height: 100%;
