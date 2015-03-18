@@ -104,6 +104,21 @@ body {
   font-size: 1.1em;
 }
 
+
+
+
+
+/*--------------------- ABOUT PAGE STYLES -----------------------------*/
+.about-header {
+  padding-left: 100px;
+}
+.about-page-image {
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+}
+
 /*---------------------- MOOD SELECTION SECTION ----------------------*/
 #happy {
   background-color: #8cff8c;
