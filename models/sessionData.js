@@ -10,7 +10,7 @@ var Session = mongoose.Schema({
   track: {},
   exitMood: String,
   exitThoughts: String,
-  moodShift: String,
+  moodShift: Boolean,
   clickLocations: []
 });
 

@@ -77,7 +77,32 @@ body {
   color: #777;
   position: absolute;
 }*/
-
+/*----------------------- INDEX PAGE STYLES -------------------------*/
+.home-image {
+  margin: auto;
+  border: 5px solid grey;
+  width: 60%;
+  border-radius: 5px;
+}
+.page-image {
+  text-align: center;
+}
+.index-align {
+  text-align: center;
+  color: grey;
+  padding: 10px;
+}
+.body-section h2 {
+  color: grey;
+  text-decoration: underline;
+  padding-left: 60px;
+}
+.body-section p {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 1.1em;
+}
 
 /*---------------------- MOOD SELECTION SECTION ----------------------*/
 #happy {

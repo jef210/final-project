@@ -10,7 +10,7 @@ block content
           #accordion.panel-group(role="tablist", aria-multiselectable="true")
             for session in user.userSession
               //- h4= session.timeStamp
-              .panel.panel-default
+              .panel.panel-default(data-id="#{session._id}")
                 #headingOne.panel-heading(role="tab")
                   h4.panel-title
                     a(data-toggle="collapse", data-parent="#accordion", href="#collapseOne", aria-expanded="true", aria-controls="collapseOne")
@@ -25,10 +25,8 @@ block content
                         li After the instrument you were thinking about: #{session.exitThoughts}
                         li Did you notice a change in your mood? #{session.moodShift}
                         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                        <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
                         <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
-                    .row
-                    .col-xs-12
-                      .session-chart(id="graph_#{session._id}", style="width:100%; height:400px;") 
-                      script.
-                        graphs.push(['graph_#{session._id}', !{JSON.stringify(session.clickLocations)}]);
+  script.
+    var sessions = !{JSON.stringify(user.userSession)};                 
+block scripts
+  script(src="/profile.js")

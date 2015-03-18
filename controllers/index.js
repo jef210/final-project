@@ -28,14 +28,14 @@ var indexController = {
     res.redirect('/instrument');
   },
   exitSession: function(req, res) {
-    console.log(req.session);
+    console.log('req.body: ', req.body);
     var timeStamp = new Date();
     var entryMood = req.session.entryMood.entryMood;
     var entryThoughts = req.session.entryMood.entryThoughts;
 		var track = req.session.track;
     var exitMood = req.body.exitMood;
     var exitThoughts = req.body.exitThoughts;
-    var moodShift = null;
+    var moodShift = req.body.moodShift;
     var clickLocations = req.session.clickLocations;
     // var newSession = new Session({
     //   timeStamp: timeStamp,

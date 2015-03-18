@@ -336,7 +336,7 @@ steps and tasks to take this end to end
 
 
 track play back:
-  pull data from the 
+  pull data from the  DB
   timeEnd
   timeStart
   note

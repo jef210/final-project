@@ -67,7 +67,7 @@ Pad.prototype.render = function(){
 var Note = function (note, volume){
   this.note = note;
   // passing default volume
-  this.volume = volume || 0.2;
+  this.volume = volume || 0.3;
   // init howl instance
   this.howl = new Howl ({
       urls: ["note_sounds_mp3/" + this.note]
@@ -131,21 +131,35 @@ Track.prototype.play = function (){
   // tells it what the first note starttime is
   var startTime = this.notes[0].timeStart;
  // play each note by delaying it's start and end
-  this.notes.map( function (item){
+  var results = this.notes.map( function (item){
     // finds the diff between the start of the note and the start of the track
     var delay = item.timeStart - startTime;
     // fade in the note we're on after the delay
-    setTimeout ( function (){
+    var startTimeout = setTimeout ( function (){
       item.note.howl.fadeIn(0.2, 1000);
     }, delay);
     // calculate the delay for the end of the note, set timeout to end the note
     delay = item.timeEnd - startTime;
-    setTimeout ( function (){
+    var endTimeout = setTimeout ( function (){
       item.note.howl.fadeOut(0, 2000);
     }, delay);
     console.log(delay/1000);
+    return {startTimeout: startTimeout, endTimeout: endTimeout, note:item.note.howl}
   });
+  this.currentPlay = results;
 };
+
+
+Track.prototype.stop = function (){
+  this.currentPlay.map(function(item){
+    clearTimeout(item.startTimeout);
+    clearTimeout(item.endTimeout);
+    item.note.stop();
+
+  });
+}
+
+
 
 var track = new Track ();
 

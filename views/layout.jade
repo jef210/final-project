@@ -35,7 +35,11 @@ html(lang='en')
                    span.sr-only (current)
             script.
               var graphs = [];
+              var trax = [];
           block content
+          
+      footer
+        h4 footer
 
     script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js')
@@ -45,5 +49,6 @@ html(lang='en')
     script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/howler/1.1.25/howler.min.js')
     script(src='highCharts.js')
     script(src='main.js')
-//- https://github.com/FezVrasta/bootstrap-material-design/blob/master/package.json
-//- do I need to add package json
+
+
+    block scripts
