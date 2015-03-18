@@ -320,6 +320,9 @@ body {
 }*/
 
 /*Using the same structure as .home-container*/
+.profile-header {
+  text-align: center;
+}
 
 /*--------------------------- MOOD & GOALS DATA --------------------------*/
 .goals-mood-most-recent h2 {
@@ -368,8 +371,17 @@ body {
 
 /*--------------------------- FOOTER ----------------------------------------*/
 
+.footer-style {
+  border-top: 2px solid grey;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
 
+.footer-content {
 
+}
 
 
 
