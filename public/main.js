@@ -368,18 +368,39 @@ $(document).on('submit', '#signInForm', function(e){
 });
 
 
-var clickLocations = [];
+// var heatmapInstance = h337.create({
+//   container: document.querySelector('.instrument-container'),
+//   radius: 40
+// });
 
-$(document).on("click", function(e) {
-  clickLocations.push({x: e.pageX, y: e.pageY});
-  console.log(clickLocations);
-});
+// var clickLocations = [];
 
-var graphData = [];
-$('.session-chart').highcharts(function(item){
-  this.graphs.map(item);
-});
-console.log(graphs);
+// $(document).on("click", function(e) {
+
+//   var x = e.pageX;
+//   var y = e.pageY;
+//   clickLocations.push([x,y]);
+//   console.log(clickLocations);
+
+
+//   heatmapInstance.addData({
+//     x: e.layerX,
+//     y: e.layerY,
+//     value: 1
+//   });
+
+
+
+
+// });
+
+
+
+// var graphData = [];
+// $('.session-chart').highcharts(function(item){
+//   this.graphs.map(item);
+// });
+// console.log(graphs);
 
   
     
