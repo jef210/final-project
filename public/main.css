@@ -55,10 +55,18 @@ body {
   background-size: cover;
   color: grey;
 }
-.splash-header h1 {
-  text-align: center;
+.splash-header {
+  padding-left: 60px;
+  padding-bottom: 10px;
+  padding-top: 20px;
   margin: auto;
+  color: grey;
 }
+.splash-header:hover {
+  color: darkgreen;
+  text-decoration: underline;
+}
+
 
 /*------------------------- NAV STYLES --------------------------------------*/
 .nav-logo {
@@ -337,6 +345,9 @@ body {
 /*Using the same structure as .home-container*/
 .profile-header {
   text-align: center;
+}
+.glyph-cursor {
+  cursor: pointer;
 }
 
 /*--------------------------- MOOD & GOALS DATA --------------------------*/

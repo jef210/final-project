@@ -21,7 +21,7 @@ html(lang='en')
       //- Form for handling existing user logins.
       .row
         .col-xs-6
-          h1 Sign In
+          h1.splash-header Sign In
           form(action="/auth/login", method="post")
             div.form-group
               input#userNameSignInForm.form-control(type='text', name="username", placeholder='User Name')
@@ -31,7 +31,7 @@ html(lang='en')
 
         //- Form for allowing new users to register.
         .col-xs-6
-          h1 Create Your Account
+          h1.splash-header Create Your Account
           form(action="/auth/signup", method="post", autocomplete="off")
            div.form-group
              input#userNameCreateAccount.form-control(type='text', name="username", placeholder='User Name')

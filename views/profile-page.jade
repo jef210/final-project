@@ -24,8 +24,9 @@ block content
                         li After the instrument you were feeling: #{session.exitMood}
                         li After the instrument you were thinking about: #{session.exitThoughts}
                         li Did you notice a change in your mood? #{session.moodShift}
-                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                        <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+                        li Play your track!
+                        <span class="glyphicon glyphicon-play glyph-cursor" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-stop glyph-cursor" aria-hidden="true"></span>
   script.
     var sessions = !{JSON.stringify(user.userSession)};                 
 block scripts
